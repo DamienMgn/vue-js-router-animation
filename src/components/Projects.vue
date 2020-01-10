@@ -1,6 +1,12 @@
 <template>
   <div class="page projects">
-    <h1>Projects</h1>
+    <div class="projects-container">
+      <div class="project-card">
+        <img class="project-img" :src="require('../assets/wiwatt.png')" alt="">
+        <p>Projet de fin de formation réalisé en équipe de 4. Ce projet à entièrement était réalisé avec le framework Symfony 4.</p>
+        <a href=""></a>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -10,7 +16,22 @@ export default { }
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-.projects {
-    background-color: #FFC8BB
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.project-card {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 2px;
+  width: 330px;
+}
+
+.project-img {
+  width: 100%;
+  height: 230px;
+  border: 1px solid black
 }
 </style>

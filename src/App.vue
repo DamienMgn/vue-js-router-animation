@@ -1,20 +1,37 @@
 <template>
-  <div id="app">
-    <Header />
+  <div id="app" v-bind:class="mode">
+    <Header :mode="mode" v-on:toggle="toggle" />
     <transition name="slide" mode="out-in">
-        <router-view></router-view>
+        <router-view :mode="mode"></router-view>
     </transition>
+    <Footer :mode="mode" />
   </div>
 </template>
 
 <script>
 
-import Header from './layouts/Header.vue'
+import Header from './layouts/Header.vue';
+import Footer from './layouts/Footer.vue';
 
 export default {
   name: 'app',
   components: {
-    Header
+    Header,
+    Footer
+  },
+  data() {
+    return {
+      mode: "light"
+    };
+  },
+  methods: {
+    toggle() {
+      if (this.mode === "dark") {
+        this.mode = "light";
+      } else {
+        this.mode = "dark";
+      }
+    },
   }
 }
 </script>
@@ -22,16 +39,26 @@ export default {
 <style>
 body {
   margin: 0;
-  background: #202020;
+  font-family: 'Source Sans Pro', sans-serif !important;
 }
 
 .page {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0
+  min-height: calc(100vh - 35px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+.light {
+  background-color: #FFFFFF;
+  color: #282c37;
+}
+
+.dark {
+  background-color: #282c37;
+  color: #FFFFFF;
 }
 
 #app {
@@ -39,28 +66,28 @@ body {
 }
 
 .slide-enter-active {
-  animation: coming 1s ease;
+  animation: coming 0.3s ease;
 }
 
 .slide-leave-active {
-  animation: going 0.5s ease;
+  animation: going 0.3s ease;
 }
 
 @keyframes coming {
   from {
-    transform: translateX(100%)
+    transform: scale(0)
   }
   to {
-    transform: translateX(0)
+    transform: scale(1)
   }
 }
 
 @keyframes going {
   from {
-    transform: translateX(0%);
+    transform: scale(1);
   }
   to {
-    transform: translateX(100%);
+    transform: scale(0);
   }
 }
 

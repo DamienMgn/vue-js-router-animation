@@ -1,16 +1,19 @@
 <template>
-  <div class="page about">
-    <h1>About</h1>
-  </div>
+  <section class="page about">
+    
+  </section>
 </template>
 
 <script>
-export default { }
+export default {}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .about {
-    background-color: #F5DD79
+}
+
+.grid-wrapper {
+  margin: 80px 0 0 0;
 }
 </style>
