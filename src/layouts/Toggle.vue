@@ -41,9 +41,16 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #282c37;
+  background: #FFFFFF;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  border: 1px solid #011832;
+  height: 21px;
+  width: 40px;
+}
+
+.dark .toggler {
+  border: 1px solid #FFFFFF;
 }
 
 .toggler:before {
@@ -51,19 +58,20 @@ export default {
   content: "";
   height: 19px;
   width: 19px;
-  left: -1px;
+  left: 0px;
   bottom: 0px;
-  background: #2b90d9;
+  background: #011832;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+
 }
 
 input:checked + .toggler {
   background: #FFFFFF;
 }
 
-input:focus + toggler {
-  box-shadow: 0 0 2px #2196f3;
+input:focus + .toggler {
+  box-shadow: 0 0 2px #e42c64;
 }
 
 input:checked + .toggler:before {

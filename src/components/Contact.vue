@@ -3,16 +3,20 @@
       <div class="contact-container">
         <h3>Damien Maquignon</h3>
         <p>14000, Caen France</p>
-        <a href="mailto:maquignondm@gmail.com">maquignondm@gmail.com</a>
-        <a href="">Linkedin</a>
-        <a href="">Github</a>
-        <a href="">Codepen</a>
+        <ContactIcon :mode="mode" />
       </div>
   </div>
 </template>
 
 <script>
-export default {}
+import ContactIcon from '../layouts/ContactIcon.vue';
+
+export default {
+    components: {
+      ContactIcon,
+    },
+    props: ["mode"],
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -22,14 +26,16 @@ export default {}
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  line-height: 4rem;
+  font-size: 1.3rem;
 }
 
 .contact-container a {
-  color: #2b90d9
+  color: #6C49B8
 }
 
 .contact-container a:hover {
-  color: #2b90d9
+  color: #6C49B8
 }
 
 </style>

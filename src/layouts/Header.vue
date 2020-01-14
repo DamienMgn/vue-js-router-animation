@@ -1,7 +1,7 @@
 <template>
     <header>
-        <b-navbar toggleable="lg" type="dark" variant="info" v-bind:class="mode">
-            <b-navbar-brand href="#">DM</b-navbar-brand>
+        <b-navbar toggleable="lg" type="dark" variant="info" >
+            <router-link class="navbar-brand" to="/">DM</router-link>
 
             <b-navbar-toggle target="nav-collapse">
                 <div class="menu-item"></div>
@@ -12,17 +12,14 @@
             <b-collapse id="nav-collapse" is-nav>
 
             <!-- Right aligned nav items -->
-            <b-navbar-nav class="ml-auto">
-
             <b-navbar-nav>
-                <b-nav-item href="#"><router-link to="/">Home</router-link></b-nav-item>
                 <b-nav-item href="#"><router-link to="/about">About</router-link></b-nav-item>
                 <b-nav-item href="#"><router-link to="/projects">Projects</router-link></b-nav-item>
                 <b-nav-item href="#"><router-link to="/contact">Contact</router-link></b-nav-item>
-                <Toggle :mode="mode" @toggle="$emit('toggle')"/>
-            </b-navbar-nav>
+                <Toggle v-if="window.width < 992" :mode="mode" @toggle="$emit('toggle')"/>
             </b-navbar-nav>
             </b-collapse>
+            <Toggle v-if="window.width >= 992" :mode="mode" @toggle="$emit('toggle')"/>
         </b-navbar>
     </header>
 </template>
@@ -32,16 +29,32 @@
 
     export default {
 
-    components: { Toggle },
+        components: { Toggle },
 
-    props: ["mode"],
+        props: ["mode"],
 
-    data () {
-        return {
-            visible: true
+        data () {
+            return {
+                visible: true,
+                window: {
+                    width: 0,
+                    height: 0
+                }
+            }
+        },
+        created() {
+        window.addEventListener('resize', this.handleResize)
+        this.handleResize();
+        },
+        destroyed() {
+            window.removeEventListener('resize', this.handleResize)
+        },
+        methods: {
+            handleResize() {
+            this.window.width = window.innerWidth;
+            this.window.height = window.innerHeight;
+            }
         }
-    }
-
     };
 </script>
 
@@ -55,40 +68,53 @@ header {
     top: 0px;
 }
 
-header .dark a {
+.dark header a {
     color: #FFFFFF !important;
 }
 
 header a {
-    padding: 4px 8px 4px 8px;
+    padding: 4px 8px;
     font-weight: bold;
 }
 
-header a:hover {
-    text-decoration: none;
+.dark header a:hover {
+    text-decoration: overline #FFFFFF;
 }
 
-header .light a {
-    color: #282c37 !important;
+.light header a:hover {
+    text-decoration: overline #011832;
 }
 
-header .dark {
-    background-color: #282c37 !important;
-    border-bottom: 1px solid #d9e1e8;
+.light header a {
+    color: #011627 !important;
 }
 
-header .light {
+.dark header .navbar {
+    background-color: #011832 !important;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.light header .navbar {
     background-color: #FFFFFF !important;
-    border-bottom: 1px solid #282c37;
+    border-bottom: 1px solid #011832;
 }
 
-.navbar-brand {
-    border: 2px solid #2b90d9;
-    border-radius: 50%;
+.light header .navbar-brand {
+    color: #011832 !important;
+    text-decoration: none !important;
 }
 
-.is-active {
-    outline: 2px solid #2b90d9 !important;
+.dark header .navbar-brand {
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+}
+
+.dark .is-active {
+    text-decoration: overline #FFFFFF;
+}
+
+.light .is-active {
+    text-decoration: overline #011832;
 }
 
 .navbar-toggler {
@@ -98,9 +124,37 @@ header .light {
 .menu-item {
     height: 3px;
     width: 30px;
-    background-color: #2b90d9;
+    background-color: #6b48ff;
     margin-top: 6px;
     margin-bottom: 6px
+}
+
+@media (min-width: 992px) {
+    .dark header .navbar {
+        border-bottom: none;
+    }
+
+    .light header .navbar {
+        border-bottom: none;
+    }
+    
+    .navbar-collapse {
+        display: flex;
+        justify-content: center;
+    }
+
+    header a {
+        padding: 4px 16px;
+        margin: 0 16px;
+    }
+
+    .dark header .navbar {
+    background-color: transparent !important;
+    }
+
+    .light header .navbar {
+    background-color: transparent !important;
+    }
 }
 
 </style>

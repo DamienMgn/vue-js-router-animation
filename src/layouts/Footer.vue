@@ -1,13 +1,9 @@
 <template>
     <footer>
         <div class="footer-link-container">
-            <a href="#"><img :src="require('../assets/github_' + mode + '.svg')"></a>
-            <span class="vertical-line"></span>
-            <a href="#"><img :src="require('../assets/codepen_' + mode + '.svg')"></a>
-            <span class="vertical-line"></span>
-            <a href="#"><img :src="require('../assets/linkedin_' + mode + '.svg')"></a>
-            <span class="vertical-line"></span>
-            <a href="#"><img :src="require('../assets/envelope_' + mode + '.svg')"></a>
+            <p>Damien Maquignon - 2020</p>
+            <span class="horizontal-line"></span>
+            <p>Développé avec VueJs</p>
         </div>
     </footer>
 </template>
@@ -26,33 +22,50 @@
 
 footer {
     width: 100%;
-    height: 35px;
-    z-index: 1;
+    height: 15px;
 }
 
 .footer-link-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 0.8rem
+}
+
+.footer-link-container p{
+   margin: -10px 20px 0 20px;
 }
 
 .footer-link-container a {
     margin: -10px 40px 0 40px;
-}
-
-.light .footer-link-container a {
-    color: #282c37;
+    font-size: 0.8rem
 }
 
 .dark .footer-link-container a {
-    color: #d9e1e8;
+    color: #FFFFFF;
 }
 
-.vertical-line {
-    width: 1px;
-    height: 24px;
-    background-color: #2b90d9;
-    margin-top: -10px
+.light .footer-link-container a {
+    color: #011832;
+}
+
+.horizontal-line {
+    width: 7px;
+    height: 1px;
+    margin-top: -10px;
+    background-color: #FFFFFF
+}
+
+.light .horizontal-line {
+    background-color: #011832
+}
+
+.dark .vertical-line {
+    background: #FFFFFF;
+}
+
+.light .vertical-line {
+    background: #011832;
 }
 
 </style>

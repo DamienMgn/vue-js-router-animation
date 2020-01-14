@@ -4,7 +4,7 @@
     <transition name="slide" mode="out-in">
         <router-view :mode="mode"></router-view>
     </transition>
-    <Footer :mode="mode" />
+    <Footer />
   </div>
 </template>
 
@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      mode: "light"
+      mode: "dark"
     };
   },
   methods: {
@@ -39,25 +39,16 @@ export default {
 <style>
 body {
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif !important;
-}
-
-.page {
-  min-height: calc(100vh - 35px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  overflow: hidden;
+  font-family: 'Open Sans Condensed', sans-serif !important;
 }
 
 .light {
-  background-color: #FFFFFF;
-  color: #282c37;
+  background: #FFFFFF;
+  color: #011832;
 }
 
 .dark {
-  background-color: #282c37;
+  background-color: #011832;
   color: #FFFFFF;
 }
 
@@ -70,23 +61,26 @@ body {
 }
 
 .slide-leave-active {
-  animation: going 0.3s ease;
+  animation: going 0.4s ease;
 }
 
 @keyframes coming {
-  from {
-    transform: scale(0)
+  0% {
+    transform: scale(0);
   }
-  to {
-    transform: scale(1)
+  100% {
+    transform: scale(1);
   }
 }
 
 @keyframes going {
-  from {
+  0% {
     transform: scale(1);
   }
-  to {
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
     transform: scale(0);
   }
 }
