@@ -1,5 +1,6 @@
 <template>
     <div class="page">
+      <p>Une sélection de quelques un de mes projets</p>
       <agile class="projects" :dots="false">
         <template slot="prevButton">prev</template>
           <div v-for="slide in slides" :key="slide.key" class="slide" :class="slide.class">
@@ -59,11 +60,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .projects {
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 75vw;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .slide {
@@ -80,17 +82,17 @@ export default {
 }
 
 .first-project {
-  background: linear-gradient(-45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1)), url('../assets/wiwatt2.png');
+  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/wiwatt2.png');
   background-size: cover;
 }
 
 .second-project {
-  background: linear-gradient(-45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1)), url('../assets/book.png');
+  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/book.png');
   background-size: cover;
 }
 
 .third-project {
-  background: linear-gradient(-45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1)), url('../assets/github.png');
+  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/github.png');
   background-size: cover;
 }
 
@@ -144,8 +146,8 @@ export default {
 }
 
 .light .agile__nav-button {
-  color: #011832;
-  background-color: #FFFFFF;
+  color: #FFFFFF;
+  background-color: #011832;
   border-color: #011832;
 }
 
@@ -156,30 +158,43 @@ export default {
 }
 
 .light .agile__nav-button:hover {
-  color: #FFFFFF;
-  background-color: #011832;
+  color: #011832;
+  background-color: #FFFFFF;
   transition: background-color 0.5s; 
 }
 
 @media (min-width: 540px) {
+
+}
+
+@media (min-width: 992px) {
   .slide-content {
-    height: 75%;
+    height: initial;
     width: 75%;
   }
 
-  .slide {
-    height: 70vh;
-  }
-}
-
-@media (min-width: 840px) {
-  .slide-content {
-    height: initial;
-    width: 50%;
+  .projects {
+  width: 50vw;
   }
 
   .slide {
-    height: 70vh;
+    height: 50vh;
+    width: 50vw;
+  }
+
+  .agile__nav-button {
+    position: absolute;
+    margin: 0;
+  }
+
+  .agile__nav-button--prev {
+    top: 50%;
+    left: -183px;
+  }
+
+  .agile__nav-button--next {
+    top: 50%;
+    left: calc(100% + 101px);
   }
 }
 
