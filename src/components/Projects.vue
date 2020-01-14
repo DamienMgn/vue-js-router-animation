@@ -1,23 +1,24 @@
 <template>
     <div class="page">
-      <p>Une sélection de quelques un de mes projets</p>
-      <agile class="projects" :dots="false">
-        <template slot="prevButton">prev</template>
-          <div v-for="slide in slides" :key="slide.key" class="slide" :class="slide.class">
-            <div class="slide-content" :style="{backgroundColor: slide.color}">
-              <h3>{{slide.title}}</h3>
-              <p>{{slide.content}}</p>
-              <a :href="slide.link" class="slide-link">Link</a>
+      <div class="projects-container">
+        <agile class="projects" :dots="false">
+          <template slot="prevButton">prev</template>
+            <div v-for="slide in slides" :key="slide.key" class="slide" :class="slide.class">
+              <div class="slide-content" :style="{borderColor: slide.color}">
+                <h3>{{slide.title}}</h3>
+                <p>{{slide.content}}</p>
+                <a :href="slide.link" class="slide-link">Link</a>
+              </div>
             </div>
-          </div>
-        <template slot="nextButton">next</template>
-      </agile>
+          <template slot="nextButton">next</template>
+        </agile>
+      </div>
     </div>
 </template>
 
 <script>
 
-import { VueAgile } from 'vue-agile'
+import { VueAgile } from 'vue-agile';
 
 export default {
 	components: {
@@ -59,6 +60,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+.projects-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/pic01.jpg');
+  background-size: cover;
+}
+
 .projects {
   position: relative;
   flex-direction: column;
@@ -78,22 +89,7 @@ export default {
   border-radius: 5px;
   opacity: 1;
   color: #011832;
-  font-size: 1.2rem;
-}
-
-.first-project {
-  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/wiwatt2.png');
-  background-size: cover;
-}
-
-.second-project {
-  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/book.png');
-  background-size: cover;
-}
-
-.third-project {
-  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/github.png');
-  background-size: cover;
+  font-size: 1rem;
 }
 
 .slide-content {
@@ -103,22 +99,25 @@ export default {
   align-items: center;
   height: 100%;
   width: 100%;
-  border: 3px solid #FFFFFF;
   padding: 20px;
   text-align: justify;
+  border: 3px solid;
+  border-radius: 5px;
+  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1));
 }
 
-.first-project .slide-content {
+.slide-content {
   color: #FFFFFF
 }
 
 .slide-link {
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
-  padding: 5px 15px;
+  padding: 5px 50px;
   background-color: #011832;
   transition: all 0.4s;
   border-radius: 5%;
+  margin-top: 2rem;
 }
 
 .slide-link:hover {
@@ -135,20 +134,11 @@ export default {
 
 .agile__nav-button {
   padding: 5px 25px;
-  margin: 15px 75px;
+  margin: 15px 15px;
   border-radius: 5%;
-}
-
-.dark .agile__nav-button {
-  color: #FFFFFF;
-  background-color: #011832;
   border-color: #FFFFFF;
-}
-
-.light .agile__nav-button {
   color: #FFFFFF;
   background-color: #011832;
-  border-color: #011832;
 }
 
 .dark .agile__nav-button:hover {
@@ -164,22 +154,26 @@ export default {
 }
 
 @media (min-width: 540px) {
+  .projects-container {
+    height: 80vh;
+    width: 90%;
+  }
 
+  .slide {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 992px) {
-  .slide-content {
-    height: initial;
-    width: 75%;
-  }
 
   .projects {
-  width: 50vw;
+    width: 50vw;
   }
 
   .slide {
     height: 50vh;
     width: 50vw;
+    font-size: 1.2rem;
   }
 
   .agile__nav-button {

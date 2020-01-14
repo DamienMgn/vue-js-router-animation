@@ -13,9 +13,9 @@
 
             <!-- Right aligned nav items -->
             <b-navbar-nav>
-                <b-nav-item href="#"><router-link to="/about">About</router-link></b-nav-item>
-                <b-nav-item href="#"><router-link to="/projects">Projects</router-link></b-nav-item>
-                <b-nav-item href="#"><router-link to="/contact">Contact</router-link></b-nav-item>
+                <b-nav-item href="#"><router-link to="/about">A PROPOS</router-link></b-nav-item>
+                <b-nav-item href="#"><router-link to="/projects">PROJETS</router-link></b-nav-item>
+                <b-nav-item href="#"><router-link to="/contact">CONTACT</router-link></b-nav-item>
                 <Toggle v-if="window.width < 992" :mode="mode" @toggle="$emit('toggle')"/>
             </b-navbar-nav>
             </b-collapse>
@@ -90,12 +90,12 @@ header a {
 }
 
 .dark header .navbar {
-    background-color: #011832 !important;
+    background-color: transparent !important;
     border-bottom: 1px solid #FFFFFF;
 }
 
 .light header .navbar {
-    background-color: #FFFFFF !important;
+    background-color: transparent !important;
     border-bottom: 1px solid #011832;
 }
 

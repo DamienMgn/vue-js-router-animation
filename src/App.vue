@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      mode: "dark"
+      mode: "light"
     };
   },
   methods: {
@@ -45,11 +45,13 @@ body {
 .light {
   background: #FFFFFF;
   color: #011832;
+  transition: all 1s;
 }
 
 .dark {
   background-color: #011832;
   color: #FFFFFF;
+  transition: all 1s;
 }
 
 #app {
@@ -78,7 +80,7 @@ body {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
   100% {
     transform: scale(0);

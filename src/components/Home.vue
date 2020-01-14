@@ -36,18 +36,18 @@ export default {
     data () {
       return {
         circles: [
-          { color: ['#6b48ff', '#6b48ff'], top: '55%', left: '95%', width: '40px', height: '40px', strength: 40, class: 'circle'},
-          { color: ['#ffdc34', '#ffdc34'], top: '55%', left: '73%', width: '50px', height: '50px', strength: 40, class: 'circle'},
-          { color: ['#6b48ff', '#6b48ff'], top: '45%', left: '15%', width: '40px', height: '40px', strength: 46, class: 'circle'},
-          { color: ['#ffdc34', '#ffdc34'], top: '18%', left: '25%', width: '35px', height: '35px', strength: 33, class: 'circle'},
-          { color: ['#2FCE7F', '#2FCE7F'], top: '15%', left: '5%', width: '65px', height: '65px', strength: 90, class: 'circle'},
-          { color: ['#6b48ff', '#6b48ff'], top: '79%', left: '23%', width: '55px', height: '55px', strength: 47, class: 'circle'},
-          { color: ['#2FCE7F', '#2FCE7F'], top: '21%', left: '87%', width: '50px', height: '50px', strength: 65, class: 'circle'},
-          { color: ['#6b48ff', '#6b48ff'], top: '23%', left: '67%', width: '75px', height: '75px', strength: 90, class: 'circle'},
-          { color: ['#2FCE7F', '#2FCE7F'], top: '80%', left: '59%', width: '35px', height: '35px', strength: 90, class: 'circle'},
-          { color: ['#2FCE7F', '#2FCE7F'], top: '95%', left: '7%', width: '48px', height: '48px', strength: 90, class: 'circle'},
-          { color: ['#ffdc34', '#ffdc34'], top: '90%', left: '17%', width: '42px', height: '42px', strength: 90, class: 'circle'},
-          { color: ['#ffdc34', '#ffdc34'], top: '85%', left: '87%', width: '75px', height: '75px', strength: 90, class: 'circle'},
+          { color: ['#ffdc34', '#6b48ff'], top: '55%', left: '95%', width: '40px', height: '40px', strength: 40, class: 'circle'},
+          { color: ['#ffdc34', '#6b48ff'], top: '55%', left: '73%', width: '50px', height: '50px', strength: 40, class: 'circle'},
+          { color: ['#6b48ff', '#2FCE7F'], top: '45%', left: '15%', width: '40px', height: '40px', strength: 46, class: 'circle'},
+          { color: ['#ffdc34', '#2FCE7F'], top: '18%', left: '25%', width: '35px', height: '35px', strength: 33, class: 'circle'},
+          { color: ['#2FCE7F', '#ffdc34'], top: '15%', left: '5%', width: '65px', height: '65px', strength: 90, class: 'circle'},
+          { color: ['#2FCE7F', '#6b48ff'], top: '79%', left: '23%', width: '55px', height: '55px', strength: 47, class: 'circle'},
+          { color: ['#6b48ff', '#2FCE7F'], top: '21%', left: '87%', width: '50px', height: '50px', strength: 65, class: 'circle'},
+          { color: ['#6b48ff', '#2FCE7F'], top: '23%', left: '67%', width: '75px', height: '75px', strength: 90, class: 'circle'},
+          { color: ['#2FCE7F', '#ffdc34'], top: '80%', left: '59%', width: '35px', height: '35px', strength: 90, class: 'circle'},
+          { color: ['#ffdc34', '#2FCE7F'], top: '95%', left: '7%', width: '48px', height: '48px', strength: 90, class: 'circle'},
+          { color: ['#ffdc34', '#6b48ff'], top: '90%', left: '17%', width: '42px', height: '42px', strength: 90, class: 'circle'},
+          { color: ['#ffdc34', '#6b48ff'], top: '85%', left: '87%', width: '75px', height: '75px', strength: 90, class: 'circle'},
         ]
       }
     }
@@ -58,7 +58,7 @@ export default {
 <style>
 
 .page {
-  min-height: calc(100vh - 15px);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,7 +121,7 @@ export default {
 .dark .contact-link {
   font-size: 1.5rem;
   color: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   padding: 10px 35px;
 }
 
@@ -130,6 +130,10 @@ export default {
   border-color: #FFFFFF;
   background-color: #011832;
   text-decoration: none;
+}
+
+.contact-link:active {
+  transform: scale(0.9);
 }
 
 .dark .contact-link:hover {

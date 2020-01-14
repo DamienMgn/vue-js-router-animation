@@ -21,6 +21,8 @@
 <style>
 
 footer {
+    position: absolute;
+    top: calc(100% - 15px);
     width: 100%;
     height: 15px;
 }
