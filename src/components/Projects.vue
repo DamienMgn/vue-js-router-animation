@@ -83,13 +83,11 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 75vw;
   margin-top: 15px;
 }
 
 .slide {
   height: 60vh;
-  width: 75vw;
   display: flex;
   flex-direction: column;
   justify-content: center;

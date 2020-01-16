@@ -68,12 +68,12 @@ export default {
 
 @media (min-width: 540px) {
   .vertical-line {
-      width: 1px;
-      height: 24px;
-      margin-top: -10px;
-      display: none;
+      display: initial;
   }
 
+  .contact-icon-link-container {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 840px) {
