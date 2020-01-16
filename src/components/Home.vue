@@ -3,7 +3,7 @@
     <KinesisElement 
       class="home-intro"
       :type="'depth'"
-      :strength="5">
+      :strength="7">
       <span class="home-intro-row"><strong class="title">DAMIEN MAQUIGNON</strong></span>
       <span class="home-intro-row second">I'm a junior Web Developper !</span>
       <vue-typed-js 
@@ -43,11 +43,11 @@ export default {
           { color: ['#B9770E', '#FBEEE6'], top: '45%', left: '73%', width: '150px', height: '150px', strength: 40, class: 'circle'},
           { color: ['#196F3D', '#D4EFDF'], top: '55%', left: '10%', width: '90px', height: '120px', strength: 46, class: 'circle'},
           { color: ['#2874A6', '#85C1E9'], top: '18%', left: '20%', width: '105px', height: '105px', strength: 33, class: 'circle'},
-          { color: ['#7D3C98', '#D2B4DE'], top: '70%', left: '30%', width: '75px', height: '75px', strength: 33, class: 'circle'},
-          { color: ['#F4D03F', '#99A3A4'], top: '11%', left: '87%', width: '110px', height: '80px', strength: 65, class: 'circle'},
-          { color: ['#117864', '#76D7C4'], top: '8%', left: '60%', width: '115px', height: '155px', strength: 40, class: 'circle'},
+          { color: ['#6b48ff', '#D2B4DE'], top: '70%', left: '30%', width: '75px', height: '75px', strength: 33, class: 'circle'},
+          { color: ['#ffdc34', '#99A3A4'], top: '11%', left: '87%', width: '110px', height: '80px', strength: 65, class: 'circle'},
+          { color: ['#212F3C', '#2FCE7F'], top: '8%', left: '60%', width: '115px', height: '155px', strength: 40, class: 'circle'},
           { color: ['#616A6B', '#CCD1D1'], top: '70%', left: '59%', width: '95px', height: '95px', strength: 40, class: 'circle'},
-          { color: ['#641E16', '#E6B0AA'], top: '75%', left: '7%', width: '124px', height: '94px', strength: 60, class: 'circle'},
+          { color: ['#E74C3C', '#E6B0AA'], top: '75%', left: '7%', width: '124px', height: '94px', strength: 60, class: 'circle'},
         ]
       }
     }
@@ -77,15 +77,6 @@ export default {
   min-height: calc(100vh - 35px);  
 }
 
-.home-intro-border {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 50px 100px;
-  z-index: 3;
-}
-
 .home-intro-row {
   font-size: 20px;
   z-index: 4;
@@ -99,14 +90,11 @@ export default {
 
 .typing {
   font-size: 23px !important;
+  color: #6b48ff
 }
 
 .dark .typing {
   color: #2FCE7F
-}
-
-.light .typing {
-  color: #6b48ff
 }
 
 .contact-link {

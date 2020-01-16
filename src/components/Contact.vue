@@ -3,6 +3,7 @@
       <div class="contact-container">
         <h3>Damien Maquignon</h3>
         <p>14000, Caen France</p>
+        <p>maquignondm@gmail.com</p>
         <div class="contact-icon-link-container">
           <a href="#"><img :src="require('../assets/github_' + mode + '.svg')" alt="github"></a>
           <span class="vertical-line"></span>
@@ -33,6 +34,10 @@ export default {
   align-items: center;
   line-height: 4rem;
   font-size: 1.3rem;
+}
+
+.contact-container p {
+  margin: 0px;
 }
 
 .contact-container a {

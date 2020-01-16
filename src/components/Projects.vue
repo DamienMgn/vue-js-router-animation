@@ -5,9 +5,9 @@
           <template slot="prevButton">prec.</template>
             <div v-for="slide in slides" :key="slide.key" class="slide" :class="slide.class">
               <div class="slide-content" :style="{borderColor: slide.color}">
-                <h3 class="slide-title">{{slide.title}}</h3>
+                <h3 class="slide-title" :style="{borderColor: slide.color}">{{slide.title}}</h3>
                 <p>{{slide.content}}</p>
-                <a :href="slide.link" class="slide-link">Link</a>
+                <a :href="slide.link" class="slide-link">GO</a>
               </div>
             </div>
           <template slot="nextButton">suiv.</template>
@@ -17,9 +17,7 @@
 </template>
 
 <script>
-
 import { VueAgile } from 'vue-agile';
-
 export default {
 	components: {
 		agile: VueAgile,
@@ -63,7 +61,6 @@ export default {
     }
   }
 }
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -74,8 +71,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/pic01.jpg');
+  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/tools.jpeg');
   background-size: cover;
+  border-radius: 2px;
 }
 
 .projects {
@@ -83,16 +81,18 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 75vw;
   margin-top: 15px;
 }
 
 .slide {
   height: 60vh;
+  width: 75vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 2px;
   opacity: 1;
   color: #011832;
   font-size: 0.9rem;
@@ -108,19 +108,19 @@ export default {
   padding: 20px;
   text-align: justify;
   border: 3px solid;
-  border-radius: 5px;
+  border-radius: 2px;
   background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1));
   color: #FFFFFF
 }
 
 .slide-title {
-  background-color: #FFFFFF;
-  color: #011832;
+  color: #FFFFFF;
   padding: 5px 5px;
   font-weight: bold;
   margin-bottom: 2rem;
   border-radius: 10px 100px / 120px;
-  }
+  border: 3px solid;
+}
 
 .slide-link {
   color: #FFFFFF;
@@ -128,7 +128,7 @@ export default {
   padding: 5px 50px;
   background-color: transparent;
   transition: all 0.4s;
-  border-radius: 2%;
+  border-radius: 2px;
   margin-top: 2rem;
 }
 
@@ -152,7 +152,7 @@ export default {
 .agile__nav-button {
   padding: 5px 25px;
   margin: 15px 15px;
-  border-radius: 2%;
+  border-radius: 2px;
   border: 2px solid #FFFFFF;
   color: #FFFFFF;
   background-color: transparent;
@@ -177,14 +177,13 @@ export default {
   .slide-title {
     padding: 5px 100px;
   }
+
 }
-
 @media (min-width: 992px) {
-
   .projects {
     width: 50vw;
   }
-
+  
   .slide {
     height: 50vh;
     width: 50vw;
@@ -206,5 +205,4 @@ export default {
     left: calc(100% + 101px);
   }
 }
-
 </style>
