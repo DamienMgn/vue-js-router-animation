@@ -24,33 +24,5 @@
 
 <style>
 
-.contact-icon {
-    width: 100%;
-    height: 35px;
-}
-
-.contact-icon-link-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-icon-link-container a {
-    margin: -10px 40px 0 40px;
-}
-
-.vertical-line {
-    width: 1px;
-    height: 24px;
-    margin-top: -10px
-}
-
-.dark .vertical-line {
-    background: #FFFFFF;
-}
-
-.light .vertical-line {
-    background: #011832;
-}
 
 </style>

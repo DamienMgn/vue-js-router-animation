@@ -55,7 +55,7 @@ export default {
           key: 4,
           title: 'Mes autres projets',
           content: 'Pour avoir un aperçu de mes autres projets n\'hésithez pas à visiter mon Github !',
-          color: '#ffdc34',
+          color: '#E74C3C',
           class: 'third-project',
           link: 'https://github.com/DamienMgn'
         },

@@ -11,7 +11,7 @@
             :backDelay="2000"
             :loop="true"
             :typeSpeed="100"
-            :strings="['React Js !', 'Symfony !', 'Vue Js !', 'Laravel !']">
+            :strings="['React Js !', 'Symfony!', 'Vue Js !', 'Laravel !']">
             <span class="home-intro-row third">I like to do stuff with <span class="typing"></span></span>
           </vue-typed-js>
           <router-link to="/contact" class="contact-link">Me contacter !</router-link>
@@ -40,18 +40,15 @@ export default {
     data () {
       return {
         circles: [
-          { color: ['#ffdc34', '#6b48ff'], top: '45%', left: '92%', width: '140px', height: '140px', strength: 40, class: 'circle'},
           { color: ['#ffdc34', '#6b48ff'], top: '45%', left: '73%', width: '170px', height: '170px', strength: 40, class: 'circle'},
-          { color: ['#6b48ff', '#2FCE7F'], top: '35%', left: '10%', width: '140px', height: '140px', strength: 46, class: 'circle'},
-          { color: ['#ffdc34', '#2FCE7F'], top: '8%', left: '20%', width: '125px', height: '125px', strength: 33, class: 'circle'},
-          { color: ['#6b48ff', '#2FCE7F'], top: '50%', left: '30%', width: '95px', height: '95px', strength: 33, class: 'circle'},
+          { color: ['#6b48ff', '#2FCE7F'], top: '55%', left: '10%', width: '140px', height: '140px', strength: 46, class: 'circle'},
+          { color: ['#ffdc34', '#6b48ff'], top: '18%', left: '20%', width: '125px', height: '125px', strength: 33, class: 'circle'},
+          { color: ['#6b48ff', '#2FCE7F'], top: '70%', left: '30%', width: '95px', height: '95px', strength: 33, class: 'circle'},
           { color: ['#2FCE7F', '#ffdc34'], top: '2%', left: '0%', width: '215px', height: '215px', strength: 90, class: 'circle'},
-          { color: ['#2FCE7F', '#6b48ff'], top: '69%', left: '18%', width: '185px', height: '185px', strength: 47, class: 'circle'},
           { color: ['#6b48ff', '#2FCE7F'], top: '11%', left: '87%', width: '140px', height: '140px', strength: 65, class: 'circle'},
-          { color: ['#6b48ff', '#2FCE7F'], top: '10%', left: '60%', width: '225px', height: '225px', strength: 90, class: 'circle'},
+          { color: ['#6b48ff', '#2FCE7F'], top: '8%', left: '60%', width: '225px', height: '225px', strength: 90, class: 'circle'},
           { color: ['#2FCE7F', '#ffdc34'], top: '70%', left: '59%', width: '125px', height: '125px', strength: 90, class: 'circle'},
           { color: ['#ffdc34', '#2FCE7F'], top: '85%', left: '3%', width: '144px', height: '144px', strength: 60, class: 'circle'},
-          { color: ['#ffdc34', '#6b48ff'], top: '83%', left: '12%', width: '116px', height: '116px', strength: 90, class: 'circle'},
           { color: ['#ffdc34', '#6b48ff'], top: '75%', left: '87%', width: '245px', height: '245px', strength: 90, class: 'circle'},
         ]
       }
@@ -91,23 +88,14 @@ export default {
 }
 
 .home-intro-row {
-  font-size: 30px;
+  font-size: 20px;
   z-index: 4;
   text-align: center;
 }
 
 .home-intro-row strong {
-  font-size: 80px;
+  font-size: 50px;
   text-shadow: 1px 1px #6b48ff
-}
-
-.second {
-  font-size: 21px !important;
-  margin-top: 20px;
-}
-
-.third {
-  font-size: 21px !important;
 }
 
 .typing {
@@ -168,12 +156,14 @@ export default {
   .circle {
     display: initial
   }
+
+  .home-intro-row strong {
+    font-size: 70px;
+    text-shadow: 1px 1px #6b48ff
+  }
 }
 
 @media (min-width: 840px) {
-  .home-intro-row {
-    font-size: 45px;
-  }
 
   .home-intro-row strong {
     font-size: 90px;

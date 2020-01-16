@@ -3,17 +3,22 @@
       <div class="contact-container">
         <h3>Damien Maquignon</h3>
         <p>14000, Caen France</p>
-        <ContactIcon :mode="mode" />
+        <div class="contact-icon-link-container">
+          <a href="#"><img :src="require('../assets/github_' + mode + '.svg')" alt="github"></a>
+          <span class="vertical-line"></span>
+          <a href="#"><img :src="require('../assets/codepen_' + mode + '.svg')" alt="codepen"></a>
+          <span class="vertical-line"></span>
+          <a href="#"><img :src="require('../assets/linkedin_' + mode + '.svg')" alt="linkedin"></a>
+          <span class="vertical-line"></span>
+          <a href="#"><img :src="require('../assets/envelope_' + mode + '.svg')" alt="mail"></a>
+        </div>
       </div>
   </div>
 </template>
 
 <script>
-import ContactIcon from '../layouts/ContactIcon.vue';
-
 export default {
     components: {
-      ContactIcon,
     },
     props: ["mode"],
 }
@@ -36,6 +41,44 @@ export default {
 
 .contact-container a:hover {
   color: #6C49B8
+}
+
+.contact-icon-link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icon-link-container a {
+    margin: -10px 40px 0 40px;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 24px;
+    margin-top: -10px;
+    display: none;
+    background: #011832;
+}
+
+.dark .vertical-line {
+    background: #FFFFFF;
+}
+
+@media (min-width: 540px) {
+  .vertical-line {
+      width: 1px;
+      height: 24px;
+      margin-top: -10px;
+      display: none;
+  }
+
+}
+
+@media (min-width: 840px) {
+
+
 }
 
 </style>
