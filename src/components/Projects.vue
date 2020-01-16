@@ -2,15 +2,15 @@
     <div class="page">
       <div class="projects-container">
         <agile class="projects" :dots="false">
-          <template slot="prevButton">prev</template>
+          <template slot="prevButton">prec.</template>
             <div v-for="slide in slides" :key="slide.key" class="slide" :class="slide.class">
               <div class="slide-content" :style="{borderColor: slide.color}">
-                <h3>{{slide.title}}</h3>
+                <h3 class="slide-title">{{slide.title}}</h3>
                 <p>{{slide.content}}</p>
                 <a :href="slide.link" class="slide-link">Link</a>
               </div>
             </div>
-          <template slot="nextButton">next</template>
+          <template slot="nextButton">suiv.</template>
         </agile>
       </div>
     </div>
@@ -45,9 +45,17 @@ export default {
         },
         {
           key: 3,
-          title: 'Github',
-          content: 'Pour jeter un oeil à mes autres projets c\'est par ici.',
+          title: 'Mon portfolio',
+          content: 'Le site sur lequel vous naviguez a été créé entièrement avec le framework VueJS.',
           color: '#2FCE7F',
+          class: 'third-project',
+          link: 'https://github.com/DamienMgn'
+        },
+        {
+          key: 4,
+          title: 'Mes autres projets',
+          content: 'Pour avoir un aperçu de mes autres projets n\'hésithez pas à visiter mon Github !',
+          color: '#ffdc34',
           class: 'third-project',
           link: 'https://github.com/DamienMgn'
         },
@@ -89,7 +97,7 @@ export default {
   border-radius: 5px;
   opacity: 1;
   color: #011832;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .slide-content {
@@ -104,26 +112,37 @@ export default {
   border: 3px solid;
   border-radius: 5px;
   background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1));
-}
-
-.slide-content {
   color: #FFFFFF
 }
 
+.slide-title {
+  background-color: #FFFFFF;
+  color: #011832;
+  padding: 5px 5px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  border-radius: 10px 100px / 120px;
+  }
+
 .slide-link {
   color: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   padding: 5px 50px;
-  background-color: #011832;
+  background-color: transparent;
   transition: all 0.4s;
-  border-radius: 5%;
+  border-radius: 2%;
   margin-top: 2rem;
 }
 
 .slide-link:hover {
-  background-color: transparent;
   color: #FFFFFF;
   text-decoration: none;
+  transform: scale(1.05);
+}
+
+.slide-link:active {
+  text-decoration: none;
+  transform: scale(0.95)
 }
 
 .agile__actions {
@@ -135,22 +154,16 @@ export default {
 .agile__nav-button {
   padding: 5px 25px;
   margin: 15px 15px;
-  border-radius: 5%;
-  border-color: #FFFFFF;
+  border-radius: 2%;
+  border: 2px solid #FFFFFF;
   color: #FFFFFF;
-  background-color: #011832;
-}
-
-.dark .agile__nav-button:hover {
-  color: #011832;
-  background-color: #FFFFFF;
+  background-color: transparent;
   transition: background-color 0.5s; 
 }
 
-.light .agile__nav-button:hover {
+.agile__nav-button:hover {
   color: #011832;
   background-color: #FFFFFF;
-  transition: background-color 0.5s; 
 }
 
 @media (min-width: 540px) {
@@ -161,6 +174,10 @@ export default {
 
   .slide {
     font-size: 1.2rem;
+  }
+
+  .slide-title {
+    padding: 5px 100px;
   }
 }
 

@@ -38,15 +38,13 @@ export default {
   position: absolute;
   cursor: pointer;
   top: 0;
-  left: 0;
-  right: 0;
   bottom: 0;
   background: #FFFFFF;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border: 1px solid #011832;
   height: 21px;
-  width: 40px;
+  width: 41px;
 }
 
 .dark .toggler {
@@ -58,12 +56,12 @@ export default {
   content: "";
   height: 19px;
   width: 19px;
-  left: 0px;
+  left: 1px;
   bottom: 0px;
   background: #011832;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-
+  border: 1px solid #FFFFFF;
 }
 
 input:checked + .toggler {

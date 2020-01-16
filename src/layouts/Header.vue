@@ -118,15 +118,23 @@ header a {
 }
 
 .navbar-toggler {
+    border: 1px solid #011832 !important;
+}
+
+.dark .navbar-toggler {
     border: 1px solid #FFFFFF !important;
 }
 
 .menu-item {
     height: 3px;
     width: 30px;
-    background-color: #6b48ff;
+    background-color: #011832;
     margin-top: 6px;
     margin-bottom: 6px
+}
+
+.dark .menu-item {
+    background-color: #FFFFFF;
 }
 
 @media (min-width: 992px) {

@@ -1,23 +1,27 @@
 <template>
     <KinesisContainer class="page home">
       <div class="home-intro">
-        <span class="home-intro-row title"><strong>DAMIEN MAQUIGNON</strong></span>
-        <span class="home-intro-row second">I'm a junior Web Developper !</span>
-        <vue-typed-js 
-          :backSpeed="50"
-          :startDelay="0"
-          :backDelay="2000"
-          :loop="true"
-          :typeSpeed="100"
-          :strings="['React Js !', 'Symfony !', 'Vue Js !', 'Laravel !']">
-          <span class="home-intro-row third">I like to do stuff with <span class="typing"></span></span>
-        </vue-typed-js>
-        <router-link to="/contact" class="contact-link">Me contacter !</router-link>
+
+        <div class="home-intro-border">
+          <span class="home-intro-row"><strong class="title">DAMIEN MAQUIGNON</strong></span>
+          <span class="home-intro-row second">I'm a junior Web Developper !</span>
+          <vue-typed-js 
+            :backSpeed="50"
+            :startDelay="0"
+            :backDelay="2000"
+            :loop="true"
+            :typeSpeed="100"
+            :strings="['React Js !', 'Symfony !', 'Vue Js !', 'Laravel !']">
+            <span class="home-intro-row third">I like to do stuff with <span class="typing"></span></span>
+          </vue-typed-js>
+          <router-link to="/contact" class="contact-link">Me contacter !</router-link>
+        </div>
         <KinesisElement 
           v-for="(circle, index) in circles"
           :class="circle.class"
           v-bind:style="{ background: 'linear-gradient(45deg, ' + circle.color[0] + ', ' + circle.color[1] + ')', top: circle.top, left: circle.left, width: circle.width, height: circle.height }"
           v-bind:key="index"
+          :type="'translate'"
           :strength="circle.strength">
         </KinesisElement>
       </div>
@@ -36,18 +40,19 @@ export default {
     data () {
       return {
         circles: [
-          { color: ['#ffdc34', '#6b48ff'], top: '55%', left: '95%', width: '40px', height: '40px', strength: 40, class: 'circle'},
-          { color: ['#ffdc34', '#6b48ff'], top: '55%', left: '73%', width: '50px', height: '50px', strength: 40, class: 'circle'},
-          { color: ['#6b48ff', '#2FCE7F'], top: '45%', left: '15%', width: '40px', height: '40px', strength: 46, class: 'circle'},
-          { color: ['#ffdc34', '#2FCE7F'], top: '18%', left: '25%', width: '35px', height: '35px', strength: 33, class: 'circle'},
-          { color: ['#2FCE7F', '#ffdc34'], top: '15%', left: '5%', width: '65px', height: '65px', strength: 90, class: 'circle'},
-          { color: ['#2FCE7F', '#6b48ff'], top: '79%', left: '23%', width: '55px', height: '55px', strength: 47, class: 'circle'},
-          { color: ['#6b48ff', '#2FCE7F'], top: '21%', left: '87%', width: '50px', height: '50px', strength: 65, class: 'circle'},
-          { color: ['#6b48ff', '#2FCE7F'], top: '23%', left: '67%', width: '75px', height: '75px', strength: 90, class: 'circle'},
-          { color: ['#2FCE7F', '#ffdc34'], top: '80%', left: '59%', width: '35px', height: '35px', strength: 90, class: 'circle'},
-          { color: ['#ffdc34', '#2FCE7F'], top: '95%', left: '7%', width: '48px', height: '48px', strength: 90, class: 'circle'},
-          { color: ['#ffdc34', '#6b48ff'], top: '90%', left: '17%', width: '42px', height: '42px', strength: 90, class: 'circle'},
-          { color: ['#ffdc34', '#6b48ff'], top: '85%', left: '87%', width: '75px', height: '75px', strength: 90, class: 'circle'},
+          { color: ['#ffdc34', '#6b48ff'], top: '45%', left: '92%', width: '140px', height: '140px', strength: 40, class: 'circle'},
+          { color: ['#ffdc34', '#6b48ff'], top: '45%', left: '73%', width: '170px', height: '170px', strength: 40, class: 'circle'},
+          { color: ['#6b48ff', '#2FCE7F'], top: '35%', left: '10%', width: '140px', height: '140px', strength: 46, class: 'circle'},
+          { color: ['#ffdc34', '#2FCE7F'], top: '8%', left: '20%', width: '125px', height: '125px', strength: 33, class: 'circle'},
+          { color: ['#6b48ff', '#2FCE7F'], top: '50%', left: '30%', width: '95px', height: '95px', strength: 33, class: 'circle'},
+          { color: ['#2FCE7F', '#ffdc34'], top: '2%', left: '0%', width: '215px', height: '215px', strength: 90, class: 'circle'},
+          { color: ['#2FCE7F', '#6b48ff'], top: '69%', left: '18%', width: '185px', height: '185px', strength: 47, class: 'circle'},
+          { color: ['#6b48ff', '#2FCE7F'], top: '11%', left: '87%', width: '140px', height: '140px', strength: 65, class: 'circle'},
+          { color: ['#6b48ff', '#2FCE7F'], top: '10%', left: '60%', width: '225px', height: '225px', strength: 90, class: 'circle'},
+          { color: ['#2FCE7F', '#ffdc34'], top: '70%', left: '59%', width: '125px', height: '125px', strength: 90, class: 'circle'},
+          { color: ['#ffdc34', '#2FCE7F'], top: '85%', left: '3%', width: '144px', height: '144px', strength: 60, class: 'circle'},
+          { color: ['#ffdc34', '#6b48ff'], top: '83%', left: '12%', width: '116px', height: '116px', strength: 90, class: 'circle'},
+          { color: ['#ffdc34', '#6b48ff'], top: '75%', left: '87%', width: '245px', height: '245px', strength: 90, class: 'circle'},
         ]
       }
     }
@@ -76,6 +81,15 @@ export default {
   min-height: calc(100vh - 35px);  
 }
 
+.home-intro-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 100px;
+  z-index: 3;
+}
+
 .home-intro-row {
   font-size: 30px;
   z-index: 4;
@@ -89,6 +103,7 @@ export default {
 
 .second {
   font-size: 21px !important;
+  margin-top: 20px;
 }
 
 .third {
@@ -127,7 +142,6 @@ export default {
 
 .contact-link:hover {
   color: #FFFFFF;
-  border-color: #FFFFFF;
   background-color: #011832;
   text-decoration: none;
 }
@@ -147,7 +161,7 @@ export default {
   position: absolute;
   z-index: 0;
   border-radius: 50%;
-  display: none
+  display: none;
 }
 
 @media (min-width: 540px) {

@@ -45,13 +45,13 @@ body {
 .light {
   background: #FFFFFF;
   color: #011832;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .dark {
   background-color: #011832;
   color: #FFFFFF;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 #app {
