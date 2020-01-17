@@ -1,25 +1,45 @@
 <template>
   <section class="page">
+    <Header :mode="mode" @toggle="$emit('toggle')" />
     <div class="about-container">
       <div class="about-section about-presentation">
+        <h3>Je m’appelle Damien et je suis développeur web junior en Normandie.</h3>
         <p class="presentation-p">
-        Après 6 ans passés dans les domaines du contrôle de gestion et de la comptabilité, j'ai décidé de me reconvertir dans le développement web. D'abord une passion pour laquelle je me suis formé en autodidacte pendant plusieurs années, c'est devenu par la suite un réel projet professionnel. En 2019, j'ai décidé d'effectuer une formation intensive en téléprésentielle avec l'école O'clock. Cette expérience m'a permis de consolider mes connaissances et de développer une approche du développement web plus professionnelle.
+        Après avoir travaillé pendant 6 ans en tant que contrôleur de gestion / comptable, j’ai décidé en 2019 de me reconvertir dans le développement web.
         </p>
         <p class="presentation-p">
-        Après 6 ans passés dans les domaines du contrôle de gestion et de la comptabilité, j'ai décidé de me reconvertir dans le développement web. D'abord une passion pour laquelle je me suis formé en autodidacte pendant plusieurs années, c'est devenu par la suite un réel projet professionnel. En 2019, j'ai décidé d'effectuer une formation intensive en téléprésentielle avec l'école O'clock. Cette expérience m'a permis de consolider mes connaissances et de développer une approche du développement web plus professionnelle.
+        Passionné par le monde du développement depuis plusieurs années, j’ai commencé par me former en autodidacte pendant mes études (HTML, CSS, PHP). J’ai ensuite continué à me former au cours de ma vie professionnelle en développant des applications / jeux simples en Javascript.
         </p>
-      </div>
-      <div class="about-section about-skills">
         <p class="presentation-p">
-        Après 6 ans passés dans les domaines du contrôle de gestion et de la comptabilité, j'ai décidé de me reconvertir dans le développement web. D'abord une passion pour laquelle je me suis formé en autodidacte pendant plusieurs années, c'est devenu par la suite un réel projet professionnel. En 2019, j'ai décidé d'effectuer une formation intensive en téléprésentielle avec l'école O'clock. Cette expérience m'a permis de consolider mes connaissances et de développer une approche du développement web plus professionnelle.
+        Pour réussir ma reconversion, de mai à octobre 2019, j’ai suivi une formation intensive Développeur Web et Web Mobile en téléprésentielle avec l’école <a href="">O’clock</a>. Formation qui m'a permis de consolider mes connaissances et de développer une approche plus professionnelle du métier.
         </p>
+        <p class="presentation-p">
+        Pour finir, quand je ne suis pas en train de coder, je m’essaye à l’escalade à la cuisine et j'aime les romans principalement de science fiction !
+        </p>
+        <div class="contact-icon-link-container">
+          <a href="#">Github</a>
+          <span class="vertical-line"></span>
+          <a href="#">Codepen</a>
+          <span class="vertical-line"></span>
+          <a href="#">Linkedin</a>
+          <span class="vertical-line"></span>
+          <a href="#">Mail</a>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-export default {}
+
+import Header from '../layouts/Header.vue';
+
+export default {
+  props: ["mode"],
+  components: {
+    Header
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

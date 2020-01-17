@@ -68,7 +68,7 @@ export default {
 }
 
 .dark .vertical-line {
-    background: #FFFFFF;
+    background: #F1F1F1;
 }
 
 @media (min-width: 540px) {

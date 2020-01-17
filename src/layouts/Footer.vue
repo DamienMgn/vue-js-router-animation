@@ -1,9 +1,11 @@
 <template>
     <footer>
         <div class="footer-link-container">
-            <p>Damien Maquignon - 2020</p>
+            <p>maquignondm@gmail.com</p>
             <span class="horizontal-line"></span>
             <p>Développé avec VueJs</p>
+            <span class="horizontal-line"></span>
+            <p>Photo by Hunter Haley on Unsplash</p>
         </div>
     </footer>
 </template>
@@ -31,11 +33,15 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.8rem
+    font-size: 0.8rem;
 }
 
 .footer-link-container p{
    margin: -10px 20px 0 20px;
+}
+
+.dark .footer-link-container p {
+    color: #F1F1F1
 }
 
 .footer-link-container a {
@@ -43,31 +49,15 @@ footer {
     font-size: 0.8rem
 }
 
-.dark .footer-link-container a {
-    color: #FFFFFF;
-}
-
-.light .footer-link-container a {
-    color: #011832;
-}
-
 .horizontal-line {
     width: 7px;
     height: 1px;
     margin-top: -10px;
-    background-color: #FFFFFF
+    background-color: #F1F1F1
 }
 
 .light .horizontal-line {
     background-color: #011832
-}
-
-.dark .vertical-line {
-    background: #FFFFFF;
-}
-
-.light .vertical-line {
-    background: #011832;
 }
 
 </style>

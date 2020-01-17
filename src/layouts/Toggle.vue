@@ -13,7 +13,6 @@
 
 <script>
 export default {
-  props: ['mode']
 };
 </script>
 
@@ -39,7 +38,7 @@ export default {
   cursor: pointer;
   top: 0;
   bottom: 0;
-  background: #FFFFFF;
+  background: #F1F1F1;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border: 1px solid #011832;
@@ -48,7 +47,7 @@ export default {
 }
 
 .dark .toggler {
-  border: 1px solid #FFFFFF;
+  border: 1px solid #F1F1F1;
 }
 
 .toggler:before {
@@ -61,11 +60,11 @@ export default {
   background: #011832;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #F1F1F1;
 }
 
 input:checked + .toggler {
-  background: #FFFFFF;
+  background: #F1F1F1;
 }
 
 input:focus + .toggler {

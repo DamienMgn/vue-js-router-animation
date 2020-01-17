@@ -1,7 +1,6 @@
 <template>
     <header>
         <b-navbar toggleable="lg" type="dark" variant="info" >
-            <router-link class="navbar-brand" to="/">DM</router-link>
 
             <b-navbar-toggle target="nav-collapse">
                 <div class="menu-item"></div>
@@ -13,9 +12,9 @@
 
             <!-- Right aligned nav items -->
             <b-navbar-nav>
-                <b-nav-item href="#"><router-link to="/about">A PROPOS</router-link></b-nav-item>
-                <b-nav-item href="#"><router-link to="/projects">PROJETS</router-link></b-nav-item>
-                <b-nav-item href="#"><router-link to="/contact">CONTACT</router-link></b-nav-item>
+                <b-nav-item href="#" v-if="$route.path != '/'"><router-link to="/">HOME</router-link></b-nav-item>
+                <b-nav-item href="#" v-if="$route.path != '/'"><router-link to="/about">A PROPOS</router-link></b-nav-item>
+                <b-nav-item href="#" v-if="$route.path != '/'"><router-link to="/projects">REALISATIONS</router-link></b-nav-item>
                 <Toggle v-if="window.width < 992" :mode="mode" @toggle="$emit('toggle')"/>
             </b-navbar-nav>
             </b-collapse>
@@ -69,29 +68,26 @@ header {
 }
 
 .dark header a {
-    color: #FFFFFF !important;
+    color: #F1F1F1 !important;
 }
 
 header a {
     padding: 4px 8px;
     font-weight: bold;
+    color: #011627 !important;
 }
 
 .dark header a:hover {
-    text-decoration: overline #FFFFFF;
+    text-decoration: overline #F1F1F1;
 }
 
 .light header a:hover {
     text-decoration: overline #011832;
 }
 
-.light header a {
-    color: #011627 !important;
-}
-
 .dark header .navbar {
     background-color: transparent !important;
-    border-bottom: 1px solid #FFFFFF;
+    border-bottom: 1px solid #F1F1F1;
 }
 
 .light header .navbar {
@@ -105,12 +101,12 @@ header a {
 }
 
 .dark header .navbar-brand {
-    color: #FFFFFF !important;
+    color: #F1F1F1 !important;
     text-decoration: none !important;
 }
 
 .dark .is-active {
-    text-decoration: overline #FFFFFF;
+    text-decoration: overline #F1F1F1;
 }
 
 .light .is-active {
@@ -122,7 +118,7 @@ header a {
 }
 
 .dark .navbar-toggler {
-    border: 1px solid #FFFFFF !important;
+    border: 1px solid #F1F1F1 !important;
 }
 
 .menu-item {
@@ -134,7 +130,7 @@ header a {
 }
 
 .dark .menu-item {
-    background-color: #FFFFFF;
+    background-color: #F1F1F1;
 }
 
 @media (min-width: 992px) {
@@ -148,7 +144,7 @@ header a {
     
     .navbar-collapse {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     header a {
