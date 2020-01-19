@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      mode: "light"
+      mode: "dark"
     };
   },
   methods: {
@@ -36,7 +36,7 @@ export default {
 <style>
 body {
   margin: 0;
-  font-family: 'Open Sans Condensed', sans-serif !important;
+  font-family: 'Hind Vadodara', sans-serif !important;
 }
 
 #app {

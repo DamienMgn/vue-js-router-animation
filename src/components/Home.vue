@@ -6,10 +6,10 @@
     <KinesisElement 
       class="home-intro"
       :type="'depth'"
-      :strength="5">
+      :strength="15">
       <div class="home-presentation">
         <span class="home-intro-row"><strong class="title">Damien Maquignon</strong></span>
-        <span class="home-intro-row second">je suis Développeur Web Junior Spécialisé Symfony 4.</span>
+        <span class="home-intro-row second">Développeur Web Junior Spécialisé Symfony 4.</span>
         <vue-typed-js 
           :backSpeed="50"
           :startDelay="0"
@@ -20,8 +20,8 @@
           <span class="home-intro-row third">Mais j'aime aussi <span class="typing"></span></span>
         </vue-typed-js>
       </div>
-      <router-link to="/about" class="contact-link">A propos !</router-link>
-      <router-link to="/projects" class="contact-link">Mes Réalisations !</router-link>
+      <router-link to="/about" class="home-button">A propos</router-link>
+      <router-link to="/projects" class="home-button">Mes Réalisations</router-link>
       <KinesisElement 
         v-for="(circle, index) in circles"
         :class="circle.class"
@@ -48,14 +48,14 @@ export default {
     data () {
       return {
         circles: [
-          { color: ['#B9770E', '#FBEEE6'], top: '45%', left: '73%', width: '50px', height: '50px', strength: 40, class: 'circle'},
-          { color: ['#196F3D', '#D4EFDF'], top: '5%', left: '10%', width: '90px', height: '120px', strength: 46, class: 'circle'},
-          { color: ['#2874A6', '#85C1E9'], top: '18%', left: '20%', width: '105px', height: '105px', strength: 33, class: 'circle'},
-          { color: ['#6b48ff', '#D2B4DE'], top: '70%', left: '30%', width: '75px', height: '75px', strength: 33, class: 'circle'},
-          { color: ['#ffdc34', '#99A3A4'], top: '11%', left: '87%', width: '110px', height: '80px', strength: 65, class: 'circle'},
-          { color: ['#212F3C', '#2FCE7F'], top: '8%', left: '60%', width: '115px', height: '155px', strength: 40, class: 'circle'},
-          { color: ['#616A6B', '#CCD1D1'], top: '70%', left: '59%', width: '95px', height: '95px', strength: 40, class: 'circle'},
-          { color: ['#E74C3C', '#E6B0AA'], top: '75%', left: '7%', width: '124px', height: '94px', strength: 60, class: 'circle'},
+          { color: ['#0E6251', '#48C9B0'], top: '45%', left: '73%', width: '50px', height: '50px', strength: 40, class: 'circle'},
+          { color: ['#0B5345', '#73C6B6'], top: '5%', left: '10%', width: '90px', height: '120px', strength: 46, class: 'circle'},
+          { color: ['#0E6251', '#7DCEA0'], top: '18%', left: '20%', width: '105px', height: '105px', strength: 33, class: 'circle'},
+          { color: ['#186A3B', '#82E0AA'], top: '70%', left: '30%', width: '75px', height: '75px', strength: 33, class: 'circle'},
+          { color: ['#7D6608', '#F7DC6F'], top: '11%', left: '87%', width: '110px', height: '80px', strength: 65, class: 'circle'},
+          { color: ['#7E5109', '#F5B041'], top: '8%', left: '60%', width: '115px', height: '155px', strength: 40, class: 'circle'},
+          { color: ['#784212', '#EB984E'], top: '70%', left: '59%', width: '95px', height: '95px', strength: 40, class: 'circle'},
+          { color: ['#6E2C00', '#DC7633'], top: '75%', left: '7%', width: '124px', height: '94px', strength: 60, class: 'circle'},
         ]
       }
     }
@@ -109,32 +109,24 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 2px solid #FFFFFF;
-  z-index: 3;
-  border-radius: 2px;
   padding: 25px 45px;
-  transition: border 0.5s;
-}
-
-.dark .home-presentation {
-  border: 2px solid #001329;
 }
 
 .home-intro-row {
-  font-size: 18px;
+  font-size: 1rem;
   z-index: 4;
   text-align: center;
   font-style: italic;
 }
 
 .home-intro-row strong {
-  font-size: 50px;
+  font-size: 2.3rem;
   font-weight: normal;
   font-style: normal;
 }
 
 .typing {
-  font-size: 23px !important;
+  font-size: 1.2rem !important;
   color: #6b48ff
 }
 
@@ -142,36 +134,37 @@ export default {
   color: #2FCE7F
 }
 
-.contact-link {
+.home-button {
   font-size: 1.2rem;
-  color: #011832;
-  border: 2px solid #011832;
-  margin-top: 4rem;
+  color: #2FCE7F;
+  border: 2px solid #2FCE7F;
+  margin-top: 1rem;
   padding: 10px 35px;
   z-index: 14;
   background-color: transparent;
   transition: all 0.5s;
+  font-style: italic;
 }
 
-.dark .contact-link {
-  color: #F1F1F1;
-  border: 2px solid #F1F1F1;
+.light .home-button {
+  color: #6b48ff;
+  border: 2px solid #6b48ff;
 }
 
-.contact-link:hover {
+.home-button:hover {
   color: #F1F1F1;
-  background-color: #011832;
+  background-color: #2FCE7F;
   text-decoration: none;
 }
 
-.contact-link:active {
+.home-button:active {
   transform: scale(0.9);
 }
 
-.dark .contact-link:hover {
-  color: #011832;
-  border: 2px solid #011832;
-  background-color: #F1F1F1;
+.light .home-button:hover {
+  color: #F1F1F1;
+  border: 2px solid #6b48ff;
+  background-color: #6b48ff;
   text-decoration: none;
 }
 
@@ -182,25 +175,58 @@ export default {
   display: none;
 }
 
+@media (min-width: 325px) {
+  .home-presentation {
+    border: 3px solid #FFFFFF;
+    z-index: 3;
+    border-radius: 2px;
+    padding: 25px 45px;
+    transition: border 0.5s;
+    box-shadow: -1px 1px 5px gray;
+  }
+
+  .dark .home-presentation {
+    border: 3px solid #001329;
+  }
+
+  .home-button {
+    font-size: 0.7rem;
+    margin-top: 4rem;
+    padding: 10px 35px;
+  }
+}
+
 @media (min-width: 540px) {
   .circle {
-    display: initial
+    display: none
   }
 
   .home-intro-row strong {
-    font-size: 50px;
-    text-shadow: 1px 1px #6b48ff
+    font-size: 2.6rem;
+    text-shadow: 1px 1px #6E2C00
+  }
+
+  .home-button {
+    font-size: 0.9rem;
+    margin-top: 4rem;
+    padding: 10px 35px;
   }
 }
 
 @media (min-width: 840px) {
 
   .home-intro-row strong {
-    font-size: 70px;
+    font-size: 4rem;
   }
 
   .second {
-    font-size: 18px;
+    font-size: 1.1rem;
+  }
+
+  .home-button {
+    font-size: 1.1rem;
+    margin-top: 4rem;
+    padding: 10px 35px;
   }
 }
 

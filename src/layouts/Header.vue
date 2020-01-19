@@ -73,16 +73,16 @@ header {
 
 header a {
     padding: 4px 8px;
-    font-weight: bold;
     color: #011627 !important;
+    font-size: 0.85rem;
 }
 
 .dark header a:hover {
-    text-decoration: overline #F1F1F1;
+    text-decoration: overline #2FCE7F;
 }
 
-.light header a:hover {
-    text-decoration: overline #011832;
+header a:hover {
+    text-decoration: overline #6b48ff;
 }
 
 .dark header .navbar {
@@ -90,12 +90,12 @@ header a {
     border-bottom: 1px solid #F1F1F1;
 }
 
-.light header .navbar {
+header .navbar {
     background-color: transparent !important;
     border-bottom: 1px solid #011832;
 }
 
-.light header .navbar-brand {
+header .navbar-brand {
     color: #011832 !important;
     text-decoration: none !important;
 }
@@ -106,11 +106,11 @@ header a {
 }
 
 .dark .is-active {
-    text-decoration: overline #F1F1F1;
+    text-decoration: overline #2FCE7F;
 }
 
-.light .is-active {
-    text-decoration: overline #011832;
+.is-active {
+    text-decoration: overline #6b48ff;
 }
 
 .navbar-toggler {

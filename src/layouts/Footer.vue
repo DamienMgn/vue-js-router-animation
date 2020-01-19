@@ -24,7 +24,7 @@
 
 footer {
     position: absolute;
-    top: calc(100% - 15px);
+    top: calc(100% - 45px);
     width: 100%;
     height: 15px;
 }
@@ -37,7 +37,7 @@ footer {
 }
 
 .footer-link-container p{
-   margin: -10px 20px 0 20px;
+   margin: -10px 10px 0 10px;
 }
 
 .dark .footer-link-container p {
@@ -58,6 +58,19 @@ footer {
 
 .light .horizontal-line {
     background-color: #011832
+}
+
+@media (min-width: 595px) {
+    footer {
+        position: absolute;
+        top: calc(100% - 15px);
+        width: 100%;
+        height: 15px;
+    }
+
+    .footer-link-container p{
+        margin: -10px 20px 0 20px;
+    }
 }
 
 </style>
