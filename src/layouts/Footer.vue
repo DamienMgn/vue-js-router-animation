@@ -5,7 +5,7 @@
             <span class="horizontal-line"></span>
             <p>Développé avec VueJs</p>
             <span class="horizontal-line"></span>
-            <p>Photo by Hunter Haley on Unsplash</p>
+            <p>Photos <a href="">Unsplash</a></p>
         </div>
     </footer>
 </template>
@@ -42,11 +42,6 @@ footer {
 
 .dark .footer-link-container p {
     color: #F1F1F1
-}
-
-.footer-link-container a {
-    margin: -10px 40px 0 40px;
-    font-size: 0.8rem
 }
 
 .horizontal-line {
