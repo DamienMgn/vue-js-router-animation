@@ -41,7 +41,7 @@ body {
 
 #app {
   position: relative;
-  background-color: #641E16;
+  background-color: #424949;
 }
 
 .slide-enter-active {

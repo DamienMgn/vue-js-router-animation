@@ -74,7 +74,7 @@ export default {
 }
 
 .dark .page{
-  background-color: #011832;
+  background: #011832;
   color: #F1F1F1;
   transition: all 0.5s;
 }

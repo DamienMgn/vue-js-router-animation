@@ -14,10 +14,16 @@
         Pour réussir ma reconversion, de mai à octobre 2019, j’ai suivi une formation intensive Développeur Web et Web Mobile en téléprésentielle avec l’école <a href="">O’clock</a>. Formation qui m'a permis de consolider mes connaissances et de me spécialiser sur le framework <strong>Symfony 4</strong>.
         </p>
         <p class="presentation-p">
-        J'aime aussi travailler avec les frameworks font-end comme <strong>React Js</strong> et surtout <strong>Vue Js</strong>.
+        J'aime aussi travailler avec le framework Laravel et les frameworks font-end comme <strong>React Js</strong> et <strong>Vue Js</strong>.
         </p>
+        <div class="presentation-logos-container">
+          <span class="logo-container"><img src="../assets/laravel.svg" alt="laravel"></span>
+          <span class="logo-container"><img src="../assets/symfony.png" alt="symfony"></span>
+          <span class="logo-container"><img src="../assets/react.svg" alt="react js"></span>
+          <span class="logo-container"><img src="../assets/logo.png" alt="vue js"></span>
+        </div>
         <p class="presentation-p">
-        Pour finir, quand je ne suis pas en train de coder, je m’essaye à l’escalade à la cuisine et j'aime les romans principalement de science fiction !
+        Pour finir, quand je ne suis pas en train de coder, je fais de l’escalade et j'aime cuisiner. Sinon vous pouvez me retrouver derrière un bon livre de science-fiction !
         </p>
         <div class="contact-icon-container">
           <a class="contact-link" href="#">GITHUB</a>
@@ -96,7 +102,7 @@ export default {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 2rem 1rem 4rem 1rem;
+  margin: 3rem 0rem 7rem 0rem
 }
 
 .about-section a {
@@ -120,6 +126,34 @@ export default {
 .contact-link {
   margin: 0 0.5rem;
 }
+
+.presentation-logos-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0rem 2rem 0rem
+}
+
+.logo-container {
+  border: 1px solid #011832;
+  padding: 1rem;
+  margin: 1.5rem 1.5rem;
+  transform: rotate(-45deg)
+}
+
+.dark .logo-container {
+  border-color: #F1F1F1;
+}
+
+.logo-container img {
+  width: 75px;
+  height: 75px;
+  transform: rotate(45deg)
+}
+
 
 @media (min-width: 540px) {
   .about-section {
