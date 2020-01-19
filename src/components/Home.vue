@@ -25,7 +25,7 @@
       <KinesisElement 
         v-for="(circle, index) in circles"
         :class="circle.class"
-        v-bind:style="{ background: 'linear-gradient(45deg, ' + circle.color[0] + ', ' + circle.color[1] + ')', top: circle.top, left: circle.left, width: circle.width, height: circle.height }"
+        v-bind:style="{ top: circle.top, left: circle.left, width: circle.width, height: circle.height }"
         v-bind:key="index"
         :type="'translate'"
         :strength="circle.strength">
@@ -48,14 +48,16 @@ export default {
     data () {
       return {
         circles: [
-          { color: ['#0E6251', '#48C9B0'], top: '45%', left: '73%', width: '50px', height: '50px', strength: 40, class: 'circle'},
-          { color: ['#0B5345', '#73C6B6'], top: '5%', left: '10%', width: '90px', height: '120px', strength: 46, class: 'circle'},
-          { color: ['#0E6251', '#7DCEA0'], top: '18%', left: '20%', width: '105px', height: '105px', strength: 33, class: 'circle'},
-          { color: ['#186A3B', '#82E0AA'], top: '70%', left: '30%', width: '75px', height: '75px', strength: 33, class: 'circle'},
-          { color: ['#7D6608', '#F7DC6F'], top: '11%', left: '87%', width: '110px', height: '80px', strength: 65, class: 'circle'},
-          { color: ['#7E5109', '#F5B041'], top: '8%', left: '60%', width: '115px', height: '155px', strength: 40, class: 'circle'},
-          { color: ['#784212', '#EB984E'], top: '70%', left: '59%', width: '95px', height: '95px', strength: 40, class: 'circle'},
-          { color: ['#6E2C00', '#DC7633'], top: '75%', left: '7%', width: '124px', height: '94px', strength: 60, class: 'circle'},
+          { color: ['#0E6251', '#48C9B0'], top: '45%', left: '73%', width: '50px', height: '1px', strength: 40, class: 'circle'},
+          { color: ['#0B5345', '#73C6B6'], top: '18%', left: '10%', width: '90px', height: '1px', strength: 46, class: 'circle'},
+          { color: ['#0E6251', '#7DCEA0'], top: '18%', left: '20%', width: '1px', height: '105px', strength: 33, class: 'circle'},
+          { color: ['#186A3B', '#82E0AA'], top: '70%', left: '30%', width: '1px', height: '75px', strength: 33, class: 'circle'},
+          { color: ['#7D6608', '#F7DC6F'], top: '11%', left: '87%', width: '1px', height: '110px', strength: 65, class: 'circle'},
+          { color: ['#7E5109', '#F5B041'], top: '8%', left: '60%', width: '115px', height: '1px', strength: 40, class: 'circle'},
+          { color: ['#784212', '#EB984E'], top: '70%', left: '59%', width: '1px', height: '95px', strength: 40, class: 'circle'},
+          { color: ['#6E2C00', '#DC7633'], top: '75%', left: '7%', width: '1px', height: '94px', strength: 60, class: 'circle'},
+          { color: ['#6E2C00', '#DC7633'], top: '75%', left: '79%', width: '89px', height: '1px', strength: 60, class: 'circle'},
+          { color: ['#6E2C00', '#DC7633'], top: '89%', left: '66%', width: '100px', height: '1px', strength: 60, class: 'circle'},
         ]
       }
     }
@@ -173,6 +175,7 @@ export default {
   z-index: 0;
   border-radius: 50%;
   display: none;
+  background: linear-gradient(45deg, #2FCE7F, #6b48ff);
 }
 
 @media (min-width: 325px) {
@@ -198,7 +201,7 @@ export default {
 
 @media (min-width: 540px) {
   .circle {
-    display: none
+    display: initial
   }
 
   .home-intro-row strong {

@@ -28,6 +28,12 @@
           <span class="vertical-line"></span>
           <a class="contact-link" href="#">MAIL</a>
         </div>
+        <div 
+        v-for="(circle, index) in circles"
+        :class="circle.class"
+        v-bind:style="{ top: circle.top, left: circle.left, width: circle.width, height: circle.height }"
+        v-bind:key="index">
+        </div>
       </div>
     </div>
   </section>
@@ -41,6 +47,19 @@ export default {
   props: ["mode"],
   components: {
     Header
+  },
+  data () {
+    return {
+        circles: [
+          { color: ['#0E6251', '#48C9B0'], top: '45%', left: '73%', width: '50px', height: '1px', strength: 40, class: 'circle'},
+          { color: ['#0B5345', '#73C6B6'], top: '18%', left: '10%', width: '90px', height: '1px', strength: 46, class: 'circle'},
+          { color: ['#0E6251', '#7DCEA0'], top: '18%', left: '20%', width: '1px', height: '105px', strength: 33, class: 'circle'},
+          { color: ['#7D6608', '#F7DC6F'], top: '11%', left: '87%', width: '1px', height: '110px', strength: 65, class: 'circle'},
+          { color: ['#6E2C00', '#DC7633'], top: '75%', left: '7%', width: '1px', height: '94px', strength: 60, class: 'circle'},
+          { color: ['#6E2C00', '#DC7633'], top: '75%', left: '79%', width: '89px', height: '1px', strength: 60, class: 'circle'},
+          { color: ['#6E2C00', '#DC7633'], top: '89%', left: '66%', width: '100px', height: '1px', strength: 60, class: 'circle'},
+        ]
+    }
   }
 }
 </script>

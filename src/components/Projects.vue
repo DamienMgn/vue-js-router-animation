@@ -41,7 +41,7 @@ export default {
           key: 2,
           title: 'Organize your Book',
           content: 'Application développé avec React/Redux pour le Front-End et Laravel pour le Back-End. Cette application permet de classer ses livres en 3 catégories : Livre à lire, livre lu et livre à acheter. Api : Google Books',
-          color: '#ffdc34',
+          color: '#2FCE7F',
           class: 'second-project',
           link: 'https://react-redux-app-books.netlify.com/'
         },
@@ -49,7 +49,7 @@ export default {
           key: 3,
           title: 'Mon portfolio',
           content: 'Le site sur lequel vous naviguez a été créé entièrement avec le framework VueJS.',
-          color: '#2FCE7F',
+          color: '#6b48ff',
           class: 'third-project',
           link: 'https://github.com/DamienMgn'
         },
@@ -57,8 +57,8 @@ export default {
           key: 4,
           title: 'Mes autres projets',
           content: 'Pour avoir un aperçu de mes autres projets n\'hésithez pas à visiter mon Github !',
-          color: '#E74C3C',
-          class: 'third-project',
+          color: '#2FCE7F',
+          class: 'fourth-project',
           link: 'https://github.com/DamienMgn'
         },
       ],
@@ -75,7 +75,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/tools.jpeg');
+  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/pic01.jpg');
   background-size: cover;
   border-radius: 2px;
 }
@@ -100,6 +100,26 @@ export default {
   opacity: 1;
   color: #011832;
   font-size: 0.9rem;
+}
+
+.first-project {
+  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/wiwatt2.png');
+  background-size: cover;
+}
+
+.second-project {
+  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/book.png');
+  background-size: cover;
+}
+
+.third-project {
+  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/portfolio.png');
+  background-size: cover;
+}
+
+.fourth-project {
+  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/code.jpeg');
+  background-size: cover;
 }
 
 .slide-content {
