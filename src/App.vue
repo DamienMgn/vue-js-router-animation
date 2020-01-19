@@ -34,6 +34,11 @@ export default {
 </script>
 
 <style>
+
+html {
+  background-color: #424949;
+}
+
 body {
   margin: 0;
   font-family: 'Hind Vadodara', sans-serif !important;

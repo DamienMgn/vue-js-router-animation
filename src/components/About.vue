@@ -14,7 +14,7 @@
         Pour réussir ma reconversion, de mai à octobre 2019, j’ai suivi une formation intensive Développeur Web et Web Mobile en téléprésentielle avec l’école <a href="">O’clock</a>. Formation qui m'a permis de consolider mes connaissances et de me spécialiser sur le framework <strong>Symfony 4</strong>.
         </p>
         <p class="presentation-p">
-        J'aime aussi travailler avec le framework Laravel et les frameworks font-end comme <strong>React Js</strong> et <strong>Vue Js</strong>.
+        Je travaille aussi avec le framework Laravel et les frameworks font-end comme <strong>React Js</strong> et <strong>Vue Js</strong>.
         </p>
         <div class="presentation-logos-container">
           <span class="logo-container"><img src="../assets/laravel.svg" alt="laravel"></span>
@@ -25,14 +25,17 @@
         <p class="presentation-p">
         Pour finir, quand je ne suis pas en train de coder, je fais de l’escalade et j'aime cuisiner. Sinon vous pouvez me retrouver derrière un bon livre de science-fiction !
         </p>
-        <div class="contact-icon-container">
-          <a class="contact-link" href="#">GITHUB</a>
-          <span class="vertical-line"></span>
-          <a class="contact-link" href="#">CODEPEN</a>
-          <span class="vertical-line"></span>
-          <a class="contact-link" href="#">LINKEDIN</a>
-          <span class="vertical-line"></span>
-          <a class="contact-link" href="#">MAIL</a>
+        <div class="contact-container">
+          <h3>Me contacter !</h3>
+          <div class="contact-icon-container">
+            <a class="contact-link" href="#">GITHUB</a>
+            <span class="vertical-line"></span>
+            <a class="contact-link" href="#">CODEPEN</a>
+            <span class="vertical-line"></span>
+            <a class="contact-link" href="#">LINKEDIN</a>
+            <span class="vertical-line"></span>
+            <a class="contact-link" href="#">MAIL</a>
+          </div>
         </div>
         <div 
         v-for="(circle, index) in circles"
@@ -97,12 +100,20 @@ export default {
   line-height: 2rem;
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0rem 12rem 0rem
+}
+
 .contact-icon-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 3rem 0rem 7rem 0rem
+  margin: 3rem 0rem 1rem 0rem
 }
 
 .about-section a {
@@ -125,6 +136,7 @@ export default {
 
 .contact-link {
   margin: 0 0.5rem;
+  font-size: 1.1rem
 }
 
 .presentation-logos-container {
@@ -134,7 +146,7 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0rem 2rem 0rem
+  margin: 3rem 0rem 4rem 0rem
 }
 
 .logo-container {
