@@ -23,18 +23,18 @@
           <span class="logo-container"><img src="../assets/logo.png" alt="vue js"></span>
         </div>
         <p class="presentation-p">
-        Pour finir, quand je ne suis pas en train de coder, je fais de l’escalade et j'aime cuisiner. Sinon vous pouvez me retrouver derrière un bon livre de science-fiction !
+        Pour finir, quand je ne suis pas en train de coder, j'aime lire des romans (principalement de science fiction), cuisiner et faire de l'escalade !
         </p>
         <div class="contact-container">
           <h3>Me contacter !</h3>
           <div class="contact-icon-container">
-            <a class="contact-link" href="#">GITHUB</a>
+            <a class="contact-link" href="https://github.com/DamienMgn">GITHUB</a>
             <span class="vertical-line"></span>
-            <a class="contact-link" href="#">CODEPEN</a>
+            <a class="contact-link" href="https://codepen.io/damienmgn">CODEPEN</a>
             <span class="vertical-line"></span>
-            <a class="contact-link" href="#">LINKEDIN</a>
+            <a class="contact-link" href="https://fr.linkedin.com/in/damien-maquignon">LINKEDIN</a>
             <span class="vertical-line"></span>
-            <a class="contact-link" href="#">MAIL</a>
+            <a class="contact-link" href="mailto:maquignondm@gmail.com">MAIL</a>
           </div>
         </div>
         <div 
@@ -100,6 +100,10 @@ export default {
   line-height: 2rem;
 }
 
+.presentation-p strong{
+  text-decoration: underline;
+}
+
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -116,7 +120,7 @@ export default {
   margin: 3rem 0rem 1rem 0rem
 }
 
-.about-section a {
+.light .about-section a {
   color: #6b48ff;
 }
 

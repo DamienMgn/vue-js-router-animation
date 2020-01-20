@@ -32,7 +32,7 @@ export default {
         {
           key: 1,
           title: 'Wiwatt.fr',
-          content: 'Projet de fin de formation réalisé en équipe de 4 personnes, wiwatt.fr est un site de location de véhicule électrique développé entièrement avec le framework Symfony 4.',
+          content: 'Projet de fin de formation réalisé en équipe de 4 personnes, wiwatt.fr est un site de location de véhicule électrique entre particulier développé entièrement avec le framework Symfony 4.',
           color: '#6b48ff',
           class: 'first-project',
           link: 'http://wiwatt.fr/'
@@ -51,7 +51,7 @@ export default {
           content: 'Le site sur lequel vous naviguez a été créé entièrement avec le framework VueJS.',
           color: '#6b48ff',
           class: 'third-project',
-          link: 'https://github.com/DamienMgn'
+          link: 'https://www.damienmaquignon.com/'
         },
         {
           key: 4,
@@ -103,7 +103,7 @@ export default {
 }
 
 .first-project {
-  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/wiwatt2.png');
+  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/wiwatt2-ConvertImage.png');
   background-size: cover;
 }
 

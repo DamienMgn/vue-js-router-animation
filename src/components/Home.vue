@@ -6,7 +6,7 @@
     <KinesisElement 
       class="home-intro"
       :type="'depth'"
-      :strength="15">
+      :strength="10">
       <div class="home-presentation">
         <span class="home-intro-row"><strong class="title">Damien Maquignon</strong></span>
         <span class="home-intro-row second">Développeur Web Junior Spécialisé Symfony 4.</span>
@@ -48,16 +48,16 @@ export default {
     data () {
       return {
         circles: [
-          { color: ['#0E6251', '#48C9B0'], top: '45%', left: '73%', width: '50px', height: '1px', strength: 40, class: 'circle'},
-          { color: ['#0B5345', '#73C6B6'], top: '18%', left: '10%', width: '90px', height: '1px', strength: 46, class: 'circle'},
-          { color: ['#0E6251', '#7DCEA0'], top: '18%', left: '20%', width: '1px', height: '105px', strength: 33, class: 'circle'},
-          { color: ['#186A3B', '#82E0AA'], top: '70%', left: '30%', width: '1px', height: '75px', strength: 33, class: 'circle'},
-          { color: ['#7D6608', '#F7DC6F'], top: '11%', left: '87%', width: '1px', height: '110px', strength: 65, class: 'circle'},
-          { color: ['#7E5109', '#F5B041'], top: '8%', left: '60%', width: '115px', height: '1px', strength: 40, class: 'circle'},
-          { color: ['#784212', '#EB984E'], top: '70%', left: '59%', width: '1px', height: '95px', strength: 40, class: 'circle'},
-          { color: ['#6E2C00', '#DC7633'], top: '75%', left: '7%', width: '1px', height: '94px', strength: 60, class: 'circle'},
-          { color: ['#6E2C00', '#DC7633'], top: '75%', left: '79%', width: '89px', height: '1px', strength: 60, class: 'circle'},
-          { color: ['#6E2C00', '#DC7633'], top: '89%', left: '66%', width: '100px', height: '1px', strength: 60, class: 'circle'},
+          { color: ['#0E6251', '#48C9B0'], top: '45%', left: '73%', width: '50vw', height: '1px', strength: 40, class: 'circle'},
+          { color: ['#0B5345', '#73C6B6'], top: '18%', left: '10%', width: '50vw', height: '1px', strength: 46, class: 'circle'},
+          { color: ['#0E6251', '#7DCEA0'], top: '18%', left: '20%', width: '1px', height: '75vh', strength: 33, class: 'circle'},
+          { color: ['#186A3B', '#82E0AA'], top: '70%', left: '3%', width: '50vw', height: '1px', strength: 33, class: 'circle'},
+          { color: ['#7D6608', '#F7DC6F'], top: '11%', left: '87%', width: '1px', height: '75vh', strength: 65, class: 'circle'},
+          { color: ['#7E5109', '#F5B041'], top: '8%', left: '60%', width: '50vw', height: '1px', strength: 40, class: 'circle'},
+          { color: ['#784212', '#EB984E'], top: '70%', left: '59%', width: '1px', height: '75vh', strength: 40, class: 'circle'},
+          { color: ['#6E2C00', '#DC7633'], top: '7%', left: '7%', width: '1px', height: '75vh', strength: 60, class: 'circle'},
+          { color: ['#6E2C00', '#DC7633'], top: '75%', left: '79%', width: '50vw', height: '1px', strength: 60, class: 'circle'},
+          { color: ['#6E2C00', '#DC7633'], top: '89%', left: '66%', width: '50vw', height: '1px', strength: 60, class: 'circle'},
         ]
       }
     }
@@ -200,9 +200,6 @@ export default {
 }
 
 @media (min-width: 540px) {
-  .circle {
-    display: initial
-  }
 
   .home-intro-row strong {
     font-size: 2.6rem;
@@ -217,6 +214,10 @@ export default {
 }
 
 @media (min-width: 840px) {
+
+  .circle {
+    display: initial
+  }
 
   .home-intro-row strong {
     font-size: 4rem;

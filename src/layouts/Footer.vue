@@ -5,7 +5,7 @@
             <span class="horizontal-line"></span>
             <p>Développé avec VueJs</p>
             <span class="horizontal-line"></span>
-            <p>Photos <a href="">Unsplash</a></p>
+            <p>Photos - <a href="https://unsplash.com/">Unsplash</a></p>
         </div>
     </footer>
 </template>
@@ -42,6 +42,14 @@ footer {
 
 .dark .footer-link-container p {
     color: #F1F1F1
+}
+
+.dark .footer-link-container a {
+    color: #2FCE7F
+}
+
+.light .footer-link-container a {
+    color: #6b48ff
 }
 
 .horizontal-line {
