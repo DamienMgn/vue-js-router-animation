@@ -1,8 +1,6 @@
 <template>
   <KinesisContainer class="page home">
-    <div class="toggle-container">
-      <Toggle @toggle="$emit('toggle')"/>
-    </div>
+    <Header :mode="mode" @toggle="$emit('toggle')" />
     <KinesisElement 
       class="home-intro"
       :type="'depth'"
@@ -20,8 +18,7 @@
           <span class="home-intro-row third">Mais j'aime aussi <span class="typing"></span></span>
         </vue-typed-js>
       </div>
-      <router-link to="/about" class="home-button">A propos</router-link>
-      <router-link to="/projects" class="home-button">Mes Réalisations</router-link>
+      <router-link to="/about" class="home-button">Me contacter !</router-link>
       <KinesisElement 
         v-for="(circle, index) in circles"
         :class="circle.class"
@@ -36,14 +33,14 @@
 
 <script>
 import { KinesisContainer, KinesisElement} from 'vue-kinesis'
-import Toggle from '../layouts/Toggle.vue'
+import Header from '../layouts/Header.vue';
 
 export default {
     props: ["mode"],
     components: {
       KinesisContainer,
       KinesisElement,
-      Toggle
+      Header
     },
     data () {
       return {
@@ -53,7 +50,7 @@ export default {
           { top: '18%', left: '20%', width: '1px', height: '75vh', strength: 33, class: 'circle'},
           { top: '70%', left: '3%', width: '50vw', height: '1px', strength: 33, class: 'circle'},
           { top: '11%', left: '87%', width: '1px', height: '75vh', strength: 65, class: 'circle'},
-          { top: '8%', left: '60%', width: '50vw', height: '1px', strength: 40, class: 'circle'},
+          { top: '21%', left: '60%', width: '50vw', height: '1px', strength: 40, class: 'circle'},
           { top: '70%', left: '59%', width: '1px', height: '75vh', strength: 40, class: 'circle'},
           { top: '7%', left: '7%', width: '1px', height: '75vh', strength: 60, class: 'circle'},
           { top: '75%', left: '79%', width: '50vw', height: '1px', strength: 60, class: 'circle'},
@@ -122,7 +119,7 @@ export default {
 }
 
 .home-intro-row strong {
-  font-size: 2.3rem;
+  font-size: 3rem;
   font-weight: normal;
   font-style: normal;
   text-shadow: 1px 0 0 #6b48ff, -1px 0 0 #6b48ff, 0 1px 0 #6b48ff, 0 -1px 0 #6b48ff, 1px 1px #6b48ff, -1px -1px 0 #6b48ff, 1px -1px 0 #6b48ff, -1px 1px 0 #6b48ff;
@@ -194,6 +191,10 @@ export default {
     transition: border 0.5s;
   }
 
+  .home-intro-row strong {
+    font-size: 3.5rem;
+  }
+
   .dark .home-presentation {
     border: 3px solid #252c41;
   }
@@ -208,7 +209,7 @@ export default {
 @media (min-width: 540px) {
 
   .home-intro-row strong {
-    font-size: 4rem;
+    font-size: 5.5rem;
   }
 
   .home-button {
@@ -234,7 +235,7 @@ export default {
 
   .home-button {
     font-size: 1.1rem;
-    margin-top: 4rem;
+    margin: 3rem 0 4rem 0;
     padding: 10px 35px;
   }
 }

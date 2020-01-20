@@ -26,7 +26,7 @@
         Pour finir, quand je ne suis pas en train de coder, j'aime lire des romans (principalement de science fiction), cuisiner et faire de l'escalade !
         </p>
         <div class="contact-container">
-          <h3>Me contacter !</h3>
+          <h3 id="contact">Me contacter !</h3>
           <div class="contact-icon-container">
             <a class="contact-link" href="https://github.com/DamienMgn" target="_blank" rel="noopener noreferrer">GITHUB</a>
             <span class="vertical-line"></span>

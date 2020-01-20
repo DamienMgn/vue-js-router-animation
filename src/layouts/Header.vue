@@ -12,9 +12,9 @@
 
             <!-- Right aligned nav items -->
             <b-navbar-nav>
-                <b-nav-item href="#" v-if="$route.path != '/'"><router-link to="/">HOME</router-link></b-nav-item>
-                <b-nav-item href="#" v-if="$route.path != '/'"><router-link to="/about">A PROPOS</router-link></b-nav-item>
-                <b-nav-item href="#" v-if="$route.path != '/'"><router-link to="/projects">REALISATIONS</router-link></b-nav-item>
+                <b-nav-item href="#" ><router-link to="/">HOME</router-link></b-nav-item>
+                <b-nav-item href="#" ><router-link to="/about">A PROPOS</router-link></b-nav-item>
+                <b-nav-item href="#" ><router-link to="/projects">REALISATIONS</router-link></b-nav-item>
                 <Toggle v-if="window.width < 992" :mode="mode" @toggle="$emit('toggle')"/>
             </b-navbar-nav>
             </b-collapse>
