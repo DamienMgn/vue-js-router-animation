@@ -3,7 +3,7 @@
     <Header :mode="mode" @toggle="$emit('toggle')" />
     <div class="about-container">
       <div class="about-section about-presentation">
-        <h3 class="about-title">Je m’appelle Damien et je suis développeur web junior.</h3>
+        <h2 class="about-title">Je m’appelle Damien et je suis développeur web junior.</h2>
         <p class="presentation-p">
         Après avoir travaillé pendant 6 ans en tant que contrôleur de gestion / comptable, j’ai décidé en 2019 de me reconvertir dans le développement web.
         </p>
@@ -60,13 +60,16 @@ export default {
   data () {
     return {
         circles: [
-          { color: ['#0E6251', '#48C9B0'], top: '45%', left: '73%', width: '50px', height: '1px', strength: 40, class: 'circle'},
+          { color: ['#0E6251', '#48C9B0'], top: '45%', left: '83%', width: '50px', height: '1px', strength: 40, class: 'circle'},
           { color: ['#0B5345', '#73C6B6'], top: '18%', left: '10%', width: '90px', height: '1px', strength: 46, class: 'circle'},
           { color: ['#0E6251', '#7DCEA0'], top: '18%', left: '20%', width: '1px', height: '105px', strength: 33, class: 'circle'},
           { color: ['#7D6608', '#F7DC6F'], top: '11%', left: '87%', width: '1px', height: '110px', strength: 65, class: 'circle'},
           { color: ['#6E2C00', '#DC7633'], top: '75%', left: '7%', width: '1px', height: '94px', strength: 60, class: 'circle'},
           { color: ['#6E2C00', '#DC7633'], top: '75%', left: '79%', width: '89px', height: '1px', strength: 60, class: 'circle'},
           { color: ['#6E2C00', '#DC7633'], top: '89%', left: '66%', width: '100px', height: '1px', strength: 60, class: 'circle'},
+          { color: ['#6E2C00', '#DC7633'], top: '33%', left: '81%', width: '1px', height: '100px', strength: 60, class: 'circle'},
+          { color: ['#6E2C00', '#DC7633'], top: '69%', left: '89%', width: '1px', height: '100px', strength: 60, class: 'circle'},
+          { color: ['#6E2C00', '#DC7633'], top: '35%', left: '21%', width: '1px', height: '100px', strength: 60, class: 'circle'},
         ]
     }
   }
@@ -97,7 +100,7 @@ export default {
   width: 100%;
   height: 100%;
   text-align: justify;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 
 .presentation-p strong{
@@ -131,7 +134,7 @@ export default {
 .vertical-line {
   width: 1px;
   height: 13px;
-  background-color: #011832;
+  background-color: #252c41;
 }
 
 .dark .vertical-line {
@@ -154,14 +157,14 @@ export default {
 }
 
 .logo-container {
-  border: 1px solid #011832;
+  border: 1px solid #252c41;
   padding: 1rem;
   margin: 1.5rem 1.5rem;
   transform: rotate(-45deg)
 }
 
 .dark .logo-container {
-  border-color: #F1F1F1;
+  border-color: #FFFFFF;
 }
 
 .logo-container img {
@@ -192,15 +195,20 @@ export default {
   }
 
   .about-container {
-    margin-top: 5rem;
+    margin-top: 6rem;
   }
 }
 
 @media (min-width: 840px) {
   .about-container {
     flex-direction: row;
-    margin-top: 5rem;
+    margin-top: 7rem;
   }
+
+  .presentation-p {
+    font-size: 1.1rem;
+  }
+
 }
 
 @media (min-width: 990px) {
@@ -209,7 +217,7 @@ export default {
   }
 
   .about-container {
-    margin-top: 7rem;
+    margin-top: 10rem;
   }
 
   .about-title {

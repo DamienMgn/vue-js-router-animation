@@ -41,7 +41,7 @@ footer {
 }
 
 .dark .footer-link-container p {
-    color: #F1F1F1
+    color: #FFFFFF
 }
 
 .dark .footer-link-container a {
@@ -56,11 +56,11 @@ footer {
     width: 7px;
     height: 1px;
     margin-top: -10px;
-    background-color: #F1F1F1
+    background-color: #FFFFFF
 }
 
 .light .horizontal-line {
-    background-color: #011832
+    background-color: #252c41
 }
 
 @media (min-width: 595px) {

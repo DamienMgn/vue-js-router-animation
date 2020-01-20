@@ -68,7 +68,7 @@ header {
 }
 
 .dark header a {
-    color: #F1F1F1 !important;
+    color: #FFFFFF !important;
 }
 
 header a {
@@ -86,22 +86,26 @@ header a:hover {
 }
 
 .dark header .navbar {
-    background-color: transparent !important;
-    border-bottom: 1px solid #F1F1F1;
+    background-color: #252c41 !important;
+    border-bottom: 1px solid #FFFFFF;
 }
 
 header .navbar {
-    background-color: transparent !important;
-    border-bottom: 1px solid #011832;
+    background-color: #FFFFFF !important;
+    border-bottom: 1px solid #252c41;
+}
+
+.navbar-nav {
+    margin-top: 1rem;
 }
 
 header .navbar-brand {
-    color: #011832 !important;
+    color: #252c41 !important;
     text-decoration: none !important;
 }
 
 .dark header .navbar-brand {
-    color: #F1F1F1 !important;
+    color: #FFFFFF !important;
     text-decoration: none !important;
 }
 
@@ -114,23 +118,23 @@ header .navbar-brand {
 }
 
 .navbar-toggler {
-    border: 1px solid #011832 !important;
+    border: 1px solid #252c41 !important;
 }
 
 .dark .navbar-toggler {
-    border: 1px solid #F1F1F1 !important;
+    border: 1px solid #FFFFFF !important;
 }
 
 .menu-item {
     height: 3px;
     width: 30px;
-    background-color: #011832;
+    background-color: #252c41;
     margin-top: 6px;
     margin-bottom: 6px
 }
 
 .dark .menu-item {
-    background-color: #F1F1F1;
+    background-color: #FFFFFF;
 }
 
 @media (min-width: 992px) {
@@ -147,9 +151,14 @@ header .navbar-brand {
         justify-content: flex-end;
     }
 
+    .navbar-nav {
+        margin-top: 0rem;
+    }
+
     header a {
         padding: 4px 16px;
         margin: 0 16px;
+        font-size: 0.95rem;
     }
 
     .dark header .navbar {

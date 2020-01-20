@@ -38,16 +38,16 @@ export default {
   cursor: pointer;
   top: 0;
   bottom: 0;
-  background: #F1F1F1;
+  background: #FFFFFF;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border: 1px solid #011832;
+  border: 1px solid #252c41;
   height: 21px;
   width: 41px;
 }
 
 .dark .toggler {
-  border: 1px solid #F1F1F1;
+  border: 1px solid #FFFFFF;
 }
 
 .toggler:before {
@@ -57,14 +57,14 @@ export default {
   width: 19px;
   left: 1px;
   bottom: 0px;
-  background: #011832;
+  background: #252c41;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border: 1px solid #F1F1F1;
+  border: 1px solid #FFFFFF;
 }
 
 input:checked + .toggler {
-  background: #F1F1F1;
+  background: #FFFFFF;
 }
 
 input:focus + .toggler {

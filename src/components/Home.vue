@@ -68,14 +68,14 @@ export default {
 <style>
 
 .light .page {
-  background: #F1F1F1;
-  color: #011832;
+  background: #FFFFFF;
+  color: #252c41;
   transition: all 0.5s;
 }
 
 .dark .page{
-  background: #011832;
-  color: #F1F1F1;
+  background: #252c41;
+  color: #FFFFFF;
   transition: all 0.5s;
 }
 
@@ -154,7 +154,7 @@ export default {
 }
 
 .home-button:hover {
-  color: #F1F1F1;
+  color: #FFFFFF;
   background-color: #2FCE7F;
   text-decoration: none;
 }
@@ -164,7 +164,7 @@ export default {
 }
 
 .light .home-button:hover {
-  color: #F1F1F1;
+  color: #FFFFFF;
   border: 2px solid #6b48ff;
   background-color: #6b48ff;
   text-decoration: none;
@@ -189,7 +189,7 @@ export default {
   }
 
   .dark .home-presentation {
-    border: 3px solid #001329;
+    border: 3px solid #252c41;
   }
 
   .home-button {
