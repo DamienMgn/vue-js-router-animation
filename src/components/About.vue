@@ -120,7 +120,7 @@ export default {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 3rem 0rem 1rem 0rem
+  margin: 3rem 0rem 1rem 0rem;
 }
 
 .light .about-section a {
@@ -223,5 +223,9 @@ export default {
   .about-title {
     margin-bottom: 2rem;
   }
+
+  .contact-container {
+    height: 35vh;
+}
 }
 </style>

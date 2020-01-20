@@ -48,16 +48,16 @@ export default {
     data () {
       return {
         circles: [
-          { color: ['#0E6251', '#48C9B0'], top: '45%', left: '73%', width: '50vw', height: '1px', strength: 40, class: 'circle'},
-          { color: ['#0B5345', '#73C6B6'], top: '18%', left: '10%', width: '50vw', height: '1px', strength: 46, class: 'circle'},
-          { color: ['#0E6251', '#7DCEA0'], top: '18%', left: '20%', width: '1px', height: '75vh', strength: 33, class: 'circle'},
-          { color: ['#186A3B', '#82E0AA'], top: '70%', left: '3%', width: '50vw', height: '1px', strength: 33, class: 'circle'},
-          { color: ['#7D6608', '#F7DC6F'], top: '11%', left: '87%', width: '1px', height: '75vh', strength: 65, class: 'circle'},
-          { color: ['#7E5109', '#F5B041'], top: '8%', left: '60%', width: '50vw', height: '1px', strength: 40, class: 'circle'},
-          { color: ['#784212', '#EB984E'], top: '70%', left: '59%', width: '1px', height: '75vh', strength: 40, class: 'circle'},
-          { color: ['#6E2C00', '#DC7633'], top: '7%', left: '7%', width: '1px', height: '75vh', strength: 60, class: 'circle'},
-          { color: ['#6E2C00', '#DC7633'], top: '75%', left: '79%', width: '50vw', height: '1px', strength: 60, class: 'circle'},
-          { color: ['#6E2C00', '#DC7633'], top: '89%', left: '66%', width: '50vw', height: '1px', strength: 60, class: 'circle'},
+          { top: '45%', left: '73%', width: '50vw', height: '1px', strength: 40, class: 'circle'},
+          { top: '18%', left: '10%', width: '50vw', height: '1px', strength: 46, class: 'circle'},
+          { top: '18%', left: '20%', width: '1px', height: '75vh', strength: 33, class: 'circle'},
+          { top: '70%', left: '3%', width: '50vw', height: '1px', strength: 33, class: 'circle'},
+          { top: '11%', left: '87%', width: '1px', height: '75vh', strength: 65, class: 'circle'},
+          { top: '8%', left: '60%', width: '50vw', height: '1px', strength: 40, class: 'circle'},
+          { top: '70%', left: '59%', width: '1px', height: '75vh', strength: 40, class: 'circle'},
+          { top: '7%', left: '7%', width: '1px', height: '75vh', strength: 60, class: 'circle'},
+          { top: '75%', left: '79%', width: '50vw', height: '1px', strength: 60, class: 'circle'},
+          { top: '89%', left: '66%', width: '50vw', height: '1px', strength: 60, class: 'circle'},
         ]
       }
     }
@@ -125,6 +125,13 @@ export default {
   font-size: 2.3rem;
   font-weight: normal;
   font-style: normal;
+  text-shadow: 1px 0 0 #6b48ff, -1px 0 0 #6b48ff, 0 1px 0 #6b48ff, 0 -1px 0 #6b48ff, 1px 1px #6b48ff, -1px -1px 0 #6b48ff, 1px -1px 0 #6b48ff, -1px 1px 0 #6b48ff;
+  color: #FFFFFF;
+}
+
+.dark .home-intro-row strong {
+  text-shadow: 1px 0 0 #2FCE7F, -1px 0 0 #2FCE7F, 0 1px 0 #2FCE7F, 0 -1px 0 #2FCE7F, 1px 1px #2FCE7F, -1px -1px 0 #2FCE7F, 1px -1px 0 #2FCE7F, -1px 1px 0 #2FCE7F;
+  color: #252c41;
 }
 
 .typing {
@@ -185,7 +192,6 @@ export default {
     border-radius: 2px;
     padding: 25px 45px;
     transition: border 0.5s;
-    box-shadow: -1px 1px 5px gray;
   }
 
   .dark .home-presentation {
@@ -202,8 +208,7 @@ export default {
 @media (min-width: 540px) {
 
   .home-intro-row strong {
-    font-size: 2.6rem;
-    text-shadow: 1px 1px #6E2C00
+    font-size: 4rem;
   }
 
   .home-button {
@@ -220,7 +225,7 @@ export default {
   }
 
   .home-intro-row strong {
-    font-size: 4rem;
+    font-size: 7rem;
   }
 
   .second {
