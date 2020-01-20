@@ -11,7 +11,7 @@
         Passionné par le monde du développement depuis plusieurs années, j’ai commencé par me former en autodidacte pendant mes études (<strong>HTML, CSS, PHP</strong>). J’ai ensuite continué à me former au cours de ma vie professionnelle en développant des applications / jeux simples en <strong>Javascript</strong>.
         </p>
         <p class="presentation-p">
-        Pour réussir ma reconversion, de mai à octobre 2019, j’ai suivi une formation intensive Développeur Web et Web Mobile en téléprésentielle avec l’école <a href="">O’clock</a>. Formation qui m'a permis de consolider mes connaissances et de me spécialiser sur le framework <strong>Symfony 4</strong>.
+        Pour réussir ma reconversion, de mai à octobre 2019, j’ai suivi une formation intensive Développeur Web et Web Mobile en téléprésentielle avec l’école <a href="https://oclock.io/" target="_blank" rel="noopener noreferrer">O’clock</a>. Formation qui m'a permis de consolider mes connaissances et de me spécialiser sur le framework <strong>Symfony 4</strong>.
         </p>
         <p class="presentation-p">
         Je travaille aussi avec le framework Laravel et les frameworks font-end comme <strong>React Js</strong> et <strong>Vue Js</strong>.
@@ -28,13 +28,13 @@
         <div class="contact-container">
           <h3>Me contacter !</h3>
           <div class="contact-icon-container">
-            <a class="contact-link" href="https://github.com/DamienMgn">GITHUB</a>
+            <a class="contact-link" href="https://github.com/DamienMgn" target="_blank" rel="noopener noreferrer">GITHUB</a>
             <span class="vertical-line"></span>
-            <a class="contact-link" href="https://codepen.io/damienmgn">CODEPEN</a>
+            <a class="contact-link" href="https://codepen.io/damienmgn" target="_blank" rel="noopener noreferrer">CODEPEN</a>
             <span class="vertical-line"></span>
-            <a class="contact-link" href="https://fr.linkedin.com/in/damien-maquignon">LINKEDIN</a>
+            <a class="contact-link" href="https://fr.linkedin.com/in/damien-maquignon" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
             <span class="vertical-line"></span>
-            <a class="contact-link" href="mailto:maquignondm@gmail.com">MAIL</a>
+            <a class="contact-link" href="mailto:maquignondm@gmail.com" target="_blank" rel="noopener noreferrer">MAIL</a>
           </div>
         </div>
         <div 

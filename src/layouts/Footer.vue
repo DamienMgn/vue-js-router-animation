@@ -5,7 +5,7 @@
             <span class="horizontal-line"></span>
             <p>Développé avec VueJs</p>
             <span class="horizontal-line"></span>
-            <p>Photos - <a href="https://unsplash.com/">Unsplash</a></p>
+            <p>Photos - <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
         </div>
     </footer>
 </template>

@@ -8,7 +8,7 @@
               <div class="slide-content" :style="{borderColor: slide.color}">
                 <h3 class="slide-title" :style="{borderColor: slide.color}">{{slide.title}}</h3>
                 <p>{{slide.content}}</p>
-                <a :href="slide.link" class="slide-link">GO</a>
+                <a target="_blank" rel="noopener noreferrer" :href="slide.link" class="slide-link">GO</a>
               </div>
             </div>
           <template slot="nextButton">suiv.</template>
