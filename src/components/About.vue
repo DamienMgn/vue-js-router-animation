@@ -17,10 +17,10 @@
         Je travaille aussi avec le framework Laravel et les frameworks font-end comme <strong>React Js</strong> et <strong>Vue Js</strong>.
         </p>
         <div class="presentation-logos-container">
-          <span class="logo-container"><img src="../assets/laravel.svg" alt="laravel"></span>
-          <span class="logo-container"><img src="../assets/symfony.png" alt="symfony"></span>
-          <span class="logo-container"><img src="../assets/react.svg" alt="react js"></span>
-          <span class="logo-container"><img src="../assets/logo.png" alt="vue js"></span>
+          <span class="logo-container"><img src="../assets/images/laravel.svg" alt="laravel"></span>
+          <span class="logo-container"><img src="../assets/images/symfony.png" alt="symfony"></span>
+          <span class="logo-container"><img src="../assets/images/react.svg" alt="react js"></span>
+          <span class="logo-container"><img src="../assets/images/logo.png" alt="vue js"></span>
         </div>
         <p class="presentation-p">
         Pour finir, quand je ne suis pas en train de coder, j'aime lire des romans (principalement de science fiction), cuisiner et faire de l'escalade !
