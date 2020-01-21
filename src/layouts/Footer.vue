@@ -40,10 +40,11 @@ footer {
 
 .footer-link-container p{
    margin: -10px 10px 0 10px;
+   font-weight: 200;
 }
 
 .dark .footer-link-container p {
-    color: #FFFFFF
+    color: #70759C
 }
 
 .dark .footer-link-container a {

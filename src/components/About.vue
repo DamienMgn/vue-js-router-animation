@@ -101,12 +101,12 @@ export default {
   font-weight: 200 !important;
 }
 
-.presentation-p a {
-  color: #FFFFFF;
+.light .presentation-p a {
+  color: #6b48ff;
 }
 
 .dark .presentation-p a {
-  color: #FFFFFF;
+  color: #2FCE7F;
 }
 
 .presentation-p strong{
