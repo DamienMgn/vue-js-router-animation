@@ -43,7 +43,6 @@ html {
 
 body {
   margin: 0;
-  font-family: Muli, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
 }
 
 #app {

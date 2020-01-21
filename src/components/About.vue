@@ -98,7 +98,7 @@ export default {
   height: 100%;
   text-align: justify;
   line-height: 2.5rem;
-  font-weight: 200 !important;
+  font-weight: 300 !important;
 }
 
 .light .presentation-p a {
@@ -135,10 +135,6 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 3rem 0rem 1rem 0rem;
-}
-
-.dark .vertical-line {
-  background-color: #FFFFFF;
 }
 
 .contact-link {
