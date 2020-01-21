@@ -66,18 +66,18 @@ export default {
 
 .light .page {
   background: #FFFFFF;
-  color: #252c41;
+  color: #22264A;
   transition: all 0.5s;
 }
 
 .dark .page{
-  background: #252c41;
-  color: #FFFFFF;
+  background: #22264A;
+  color: #70759C;
   transition: all 0.5s;
 }
 
 .page {
-  min-height: 100vh;
+  min-height: calc(100vh + 105px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,7 +128,7 @@ export default {
 
 .dark .home-intro-row strong {
   text-shadow: 1px 0 0 #2FCE7F, -1px 0 0 #2FCE7F, 0 1px 0 #2FCE7F, 0 -1px 0 #2FCE7F, 1px 1px #2FCE7F, -1px -1px 0 #2FCE7F, 1px -1px 0 #2FCE7F, -1px 1px 0 #2FCE7F;
-  color: #252c41;
+  color: #22264A;
 }
 
 .typing {
@@ -184,7 +184,6 @@ export default {
 
 @media (min-width: 325px) {
   .home-presentation {
-    border: 3px solid #FFFFFF;
     z-index: 3;
     border-radius: 2px;
     padding: 25px 45px;
@@ -194,11 +193,6 @@ export default {
   .home-intro-row strong {
     font-size: 3.5rem;
   }
-
-  .dark .home-presentation {
-    border: 3px solid #252c41;
-  }
-
   .home-button {
     font-size: 0.7rem;
     margin-top: 4rem;
@@ -206,7 +200,7 @@ export default {
   }
 }
 
-@media (min-width: 540px) {
+@media (min-width: 595px) {
 
   .home-intro-row strong {
     font-size: 5.5rem;
@@ -216,6 +210,10 @@ export default {
     font-size: 0.9rem;
     margin-top: 4rem;
     padding: 10px 35px;
+  }
+
+  .page {
+    min-height: 100vh;
   }
 }
 

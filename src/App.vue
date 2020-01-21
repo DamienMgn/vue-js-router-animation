@@ -39,9 +39,11 @@ html {
   background-color: #424949;
 }
 
+
+
 body {
   margin: 0;
-  font-family: 'Hind Vadodara', sans-serif !important;
+  font-family: Muli, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
 }
 
 #app {

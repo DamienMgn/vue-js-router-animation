@@ -86,13 +86,13 @@ header a:hover {
 }
 
 .dark header .navbar {
-    background-color: #252c41 !important;
+    background-color: #22264A !important;
     border-bottom: 1px solid #FFFFFF;
 }
 
 header .navbar {
     background-color: #FFFFFF !important;
-    border-bottom: 1px solid #252c41;
+    border-bottom: 1px solid #22264A;
 }
 
 .navbar-nav {
@@ -100,7 +100,7 @@ header .navbar {
 }
 
 header .navbar-brand {
-    color: #252c41 !important;
+    color: #22264A !important;
     text-decoration: none !important;
 }
 
@@ -118,7 +118,7 @@ header .navbar-brand {
 }
 
 .navbar-toggler {
-    border: 1px solid #252c41 !important;
+    border: 1px solid #22264A !important;
 }
 
 .dark .navbar-toggler {
@@ -128,7 +128,7 @@ header .navbar-brand {
 .menu-item {
     height: 3px;
     width: 30px;
-    background-color: #252c41;
+    background-color: #22264A;
     margin-top: 6px;
     margin-bottom: 6px
 }

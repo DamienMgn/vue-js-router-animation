@@ -24,16 +24,18 @@
 
 footer {
     position: absolute;
-    top: calc(100% - 45px);
+    top: calc(100% - 105px);
     width: 100%;
     height: 15px;
 }
 
 .footer-link-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 0.8rem;
+    line-height: 3rem;
 }
 
 .footer-link-container p{
@@ -60,7 +62,7 @@ footer {
 }
 
 .light .horizontal-line {
-    background-color: #252c41
+    background-color: #22264A
 }
 
 @media (min-width: 595px) {
@@ -69,6 +71,11 @@ footer {
         top: calc(100% - 15px);
         width: 100%;
         height: 15px;
+    }
+
+    .footer-link-container {
+        flex-direction: row;
+        line-height: 1rem;
     }
 
     .footer-link-container p{

@@ -26,14 +26,11 @@
         Pour finir, quand je ne suis pas en train de coder, j'aime lire des romans (principalement de science fiction), cuisiner et faire de l'escalade !
         </p>
         <div class="contact-container">
-          <h3 id="contact">Me contacter !</h3>
+          <h3 class="contact-title">Me contacter !</h3>
           <div class="contact-icon-container">
             <a class="contact-link" href="https://github.com/DamienMgn" target="_blank" rel="noopener noreferrer">GITHUB</a>
-            <span class="vertical-line"></span>
             <a class="contact-link" href="https://codepen.io/damienmgn" target="_blank" rel="noopener noreferrer">CODEPEN</a>
-            <span class="vertical-line"></span>
             <a class="contact-link" href="https://fr.linkedin.com/in/damien-maquignon" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-            <span class="vertical-line"></span>
             <a class="contact-link" href="mailto:maquignondm@gmail.com" target="_blank" rel="noopener noreferrer">MAIL</a>
           </div>
         </div>
@@ -60,16 +57,16 @@ export default {
   data () {
     return {
         circles: [
-          { color: ['#0E6251', '#48C9B0'], top: '45%', left: '83%', width: '50px', height: '1px', strength: 40, class: 'circle'},
-          { color: ['#0B5345', '#73C6B6'], top: '18%', left: '10%', width: '90px', height: '1px', strength: 46, class: 'circle'},
-          { color: ['#0E6251', '#7DCEA0'], top: '18%', left: '20%', width: '1px', height: '105px', strength: 33, class: 'circle'},
-          { color: ['#7D6608', '#F7DC6F'], top: '11%', left: '87%', width: '1px', height: '110px', strength: 65, class: 'circle'},
-          { color: ['#6E2C00', '#DC7633'], top: '75%', left: '7%', width: '1px', height: '94px', strength: 60, class: 'circle'},
-          { color: ['#6E2C00', '#DC7633'], top: '75%', left: '79%', width: '89px', height: '1px', strength: 60, class: 'circle'},
-          { color: ['#6E2C00', '#DC7633'], top: '89%', left: '66%', width: '100px', height: '1px', strength: 60, class: 'circle'},
-          { color: ['#6E2C00', '#DC7633'], top: '33%', left: '81%', width: '1px', height: '100px', strength: 60, class: 'circle'},
-          { color: ['#6E2C00', '#DC7633'], top: '69%', left: '89%', width: '1px', height: '100px', strength: 60, class: 'circle'},
-          { color: ['#6E2C00', '#DC7633'], top: '35%', left: '21%', width: '1px', height: '100px', strength: 60, class: 'circle'},
+          { top: '45%', left: '83%', width: '50px', height: '1px', strength: 40, class: 'circle'},
+          { top: '18%', left: '10%', width: '90px', height: '1px', strength: 46, class: 'circle'},
+          { top: '18%', left: '20%', width: '1px', height: '105px', strength: 33, class: 'circle'},
+          { top: '11%', left: '87%', width: '1px', height: '110px', strength: 65, class: 'circle'},
+          { top: '75%', left: '7%', width: '1px', height: '94px', strength: 60, class: 'circle'},
+          { top: '75%', left: '79%', width: '89px', height: '1px', strength: 60, class: 'circle'},
+          { top: '89%', left: '66%', width: '100px', height: '1px', strength: 60, class: 'circle'},
+          { top: '33%', left: '81%', width: '1px', height: '100px', strength: 60, class: 'circle'},
+          { top: '69%', left: '89%', width: '1px', height: '100px', strength: 60, class: 'circle'},
+          { top: '35%', left: '21%', width: '1px', height: '100px', strength: 60, class: 'circle'},
         ]
     }
   }
@@ -101,10 +98,19 @@ export default {
   height: 100%;
   text-align: justify;
   line-height: 2.5rem;
+  font-weight: 200 !important;
+}
+
+.presentation-p a {
+  color: #FFFFFF;
+}
+
+.dark .presentation-p a {
+  color: #FFFFFF;
 }
 
 .presentation-p strong{
-  text-decoration: underline;
+  font-weight: 300 !important;
 }
 
 .contact-container {
@@ -112,29 +118,23 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5rem 0rem 12rem 0rem
+  margin: 5rem 0rem 12rem 0rem;
+  background: #70759C;
+  padding: 2rem 1rem;
+  border-radius: 2px;
+}
+
+.contact-title {
+  color: #22264A;
 }
 
 .contact-icon-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 3rem 0rem 1rem 0rem;
-}
-
-.light .about-section a {
-  color: #6b48ff;
-}
-
-.dark .about-section a {
-  color: #2FCE7F;
-}
-
-.vertical-line {
-  width: 1px;
-  height: 13px;
-  background-color: #252c41;
 }
 
 .dark .vertical-line {
@@ -142,8 +142,15 @@ export default {
 }
 
 .contact-link {
-  margin: 0 0.5rem;
-  font-size: 1.1rem
+  margin: 0 0.1rem;
+  font-size: 1.1rem;
+  color: #70759C;
+  background: #22264A;
+  padding: 0.2rem 0.5rem;
+}
+
+.contact-link:hover {
+  color: #70759C;
 }
 
 .presentation-logos-container {
@@ -157,7 +164,7 @@ export default {
 }
 
 .logo-container {
-  border: 1px solid #252c41;
+  border: 1px solid #22264A;
   padding: 1rem;
   margin: 1.5rem 1.5rem;
   transform: rotate(-45deg)
@@ -185,7 +192,7 @@ export default {
   }
 
   .contact-link {
-    margin: 0 2rem;
+    margin: 0 0.5rem;
   }
 }
 
@@ -197,6 +204,10 @@ export default {
   .about-container {
     margin-top: 6rem;
   }
+
+  .contact-link {
+    margin: 0 1rem;
+  }
 }
 
 @media (min-width: 840px) {
@@ -207,6 +218,14 @@ export default {
 
   .presentation-p {
     font-size: 1.1rem;
+  }
+
+  .contact-link {
+    margin: 0 2rem;
+  }
+
+  .contact-title {
+    font-size: 2.3rem
   }
 
 }

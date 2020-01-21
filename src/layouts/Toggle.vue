@@ -41,7 +41,7 @@ export default {
   background: #FFFFFF;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border: 1px solid #252c41;
+  border: 1px solid #22264A;
   height: 21px;
   width: 41px;
 }
@@ -57,7 +57,7 @@ export default {
   width: 19px;
   left: 1px;
   bottom: 0px;
-  background: #252c41;
+  background: #22264A;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border: 1px solid #FFFFFF;

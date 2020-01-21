@@ -98,7 +98,7 @@ export default {
   align-items: center;
   border-radius: 2px;
   opacity: 1;
-  color: #252c41;
+  color: #22264A;
   font-size: 0.9rem;
 }
 
@@ -184,7 +184,7 @@ export default {
 }
 
 .agile__nav-button:hover {
-  color: #252c41;
+  color: #22264A;
   background-color: #FFFFFF;
 }
 
