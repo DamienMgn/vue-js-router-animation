@@ -48,7 +48,7 @@ footer {
 }
 
 .dark .footer-link-container a {
-    color: #2FCE7F
+    color: #FFCC68
 }
 
 .light .footer-link-container a {

@@ -106,7 +106,7 @@ export default {
 }
 
 .dark .presentation-p a {
-  color: #2FCE7F;
+  color: #FFCC68;
 }
 
 .presentation-p strong{

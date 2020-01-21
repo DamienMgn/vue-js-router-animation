@@ -78,7 +78,7 @@ header a {
 }
 
 .dark header a:hover {
-    text-decoration: overline #2FCE7F;
+    text-decoration: overline #FFCC68;
 }
 
 header a:hover {
@@ -110,7 +110,7 @@ header .navbar-brand {
 }
 
 .dark .is-active {
-    text-decoration: overline #2FCE7F;
+    text-decoration: overline #FFCC68;
 }
 
 .is-active {

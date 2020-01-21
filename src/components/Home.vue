@@ -127,7 +127,7 @@ export default {
 }
 
 .dark .home-intro-row strong {
-  text-shadow: 1px 0 0 #2FCE7F, -1px 0 0 #2FCE7F, 0 1px 0 #2FCE7F, 0 -1px 0 #2FCE7F, 1px 1px #2FCE7F, -1px -1px 0 #2FCE7F, 1px -1px 0 #2FCE7F, -1px 1px 0 #2FCE7F;
+  text-shadow: 1px 0 0 #FFCC68, -1px 0 0 #FFCC68, 0 1px 0 #FFCC68, 0 -1px 0 #FFCC68, 1px 1px #FFCC68, -1px -1px 0 #FFCC68, 1px -1px 0 #FFCC68, -1px 1px 0 #FFCC68;
   color: #22264A;
 }
 
@@ -137,13 +137,13 @@ export default {
 }
 
 .dark .typing {
-  color: #2FCE7F
+  color: #FFCC68
 }
 
 .home-button {
   font-size: 1.2rem;
-  color: #2FCE7F;
-  border: 2px solid #2FCE7F;
+  color: #FFCC68;
+  border: 2px solid #FFCC68;
   margin-top: 1rem;
   padding: 10px 35px;
   z-index: 14;
@@ -159,7 +159,7 @@ export default {
 
 .home-button:hover {
   color: #FFFFFF;
-  background-color: #2FCE7F;
+  background-color: #FFCC68;
   text-decoration: none;
 }
 
@@ -179,7 +179,7 @@ export default {
   z-index: 0;
   border-radius: 50%;
   display: none;
-  background: linear-gradient(45deg, #2FCE7F, #6b48ff);
+  background: linear-gradient(45deg, #FFCC68, #6b48ff);
 }
 
 @media (min-width: 325px) {
