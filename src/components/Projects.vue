@@ -134,11 +134,11 @@ export default {
   border: 3px solid;
   border-radius: 2px;
   background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1));
-  color: #FFFFFF
+  color: FFCC68
 }
 
 .slide-title {
-  color: #FFFFFF;
+  color: FFCC68;
   padding: 5px 5px;
   font-weight: bold;
   margin-bottom: 2rem;
@@ -147,8 +147,8 @@ export default {
 }
 
 .slide-link {
-  color: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  color: FFCC68;
+  border: 2px solid FFCC68;
   padding: 5px 50px;
   background-color: transparent;
   transition: all 0.4s;
@@ -157,7 +157,7 @@ export default {
 }
 
 .slide-link:hover {
-  color: #FFFFFF;
+  color: FFCC68;
   text-decoration: none;
   transform: scale(1.05);
 }
@@ -177,15 +177,15 @@ export default {
   padding: 5px 25px;
   margin: 15px 15px;
   border-radius: 2px;
-  border: 2px solid #FFFFFF;
-  color: #FFFFFF;
+  border: 2px solid FFCC68;
+  color: FFCC68;
   background-color: transparent;
   transition: background-color 0.5s; 
 }
 
 .agile__nav-button:hover {
   color: #22264A;
-  background-color: #FFFFFF;
+  background-color: FFCC68;
 }
 
 @media (min-width: 540px) {

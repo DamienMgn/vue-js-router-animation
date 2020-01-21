@@ -119,7 +119,8 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 5rem 0rem 12rem 0rem;
-  background: #70759C;
+  background: #F5F5F5;
+  border: 2px solid #70759C;
   padding: 2rem 1rem;
   border-radius: 2px;
 }
@@ -167,7 +168,7 @@ export default {
 }
 
 .dark .logo-container {
-  border-color: #FFFFFF;
+  border-color: #EFEFF5;
 }
 
 .logo-container img {

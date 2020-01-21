@@ -38,7 +38,7 @@ export default {
   cursor: pointer;
   top: 0;
   bottom: 0;
-  background: #FFFFFF;
+  background: #EFEFF5;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border: 1px solid #22264A;
@@ -47,7 +47,7 @@ export default {
 }
 
 .dark .toggler {
-  border: 1px solid #FFFFFF;
+  border: 1px solid #EFEFF5;
 }
 
 .toggler:before {
@@ -60,11 +60,11 @@ export default {
   background: #22264A;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #EFEFF5;
 }
 
 input:checked + .toggler {
-  background: #FFFFFF;
+  background: #EFEFF5;
 }
 
 input:focus + .toggler {

@@ -68,7 +68,7 @@ header {
 }
 
 .dark header a {
-    color: #FFFFFF !important;
+    color: #EFEFF5 !important;
 }
 
 header a {
@@ -87,11 +87,11 @@ header a:hover {
 
 .dark header .navbar {
     background-color: #22264A !important;
-    border-bottom: 1px solid #FFFFFF;
+    border-bottom: 1px solid #EFEFF5;
 }
 
 header .navbar {
-    background-color: #FFFFFF !important;
+    background-color: #EFEFF5 !important;
     border-bottom: 1px solid #22264A;
 }
 
@@ -105,7 +105,7 @@ header .navbar-brand {
 }
 
 .dark header .navbar-brand {
-    color: #FFFFFF !important;
+    color: #EFEFF5 !important;
     text-decoration: none !important;
 }
 
@@ -122,7 +122,7 @@ header .navbar-brand {
 }
 
 .dark .navbar-toggler {
-    border: 1px solid #FFFFFF !important;
+    border: 1px solid #EFEFF5 !important;
 }
 
 .menu-item {
@@ -134,7 +134,7 @@ header .navbar-brand {
 }
 
 .dark .menu-item {
-    background-color: #FFFFFF;
+    background-color: #EFEFF5;
 }
 
 @media (min-width: 992px) {

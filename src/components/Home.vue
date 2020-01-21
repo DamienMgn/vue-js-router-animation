@@ -65,7 +65,7 @@ export default {
 <style>
 
 .light .page {
-  background: #FFFFFF;
+  background: #EFEFF5;
   color: #22264A;
   transition: all 0.5s;
 }
@@ -112,7 +112,7 @@ export default {
 }
 
 .home-intro-row {
-  font-size: 1rem;
+  font-size: 1.1rem;
   z-index: 4;
   text-align: center;
   font-style: italic;
@@ -122,8 +122,7 @@ export default {
   font-size: 3rem;
   font-weight: normal;
   font-style: normal;
-  text-shadow: 1px 0 0 #6b48ff, -1px 0 0 #6b48ff, 0 1px 0 #6b48ff, 0 -1px 0 #6b48ff, 1px 1px #6b48ff, -1px -1px 0 #6b48ff, 1px -1px 0 #6b48ff, -1px 1px 0 #6b48ff;
-  color: #FFFFFF;
+  color: #100F4D;
 }
 
 .dark .home-intro-row strong {
@@ -158,7 +157,7 @@ export default {
 }
 
 .home-button:hover {
-  color: #FFFFFF;
+  color: #EFEFF5;
   background-color: #FFCC68;
   text-decoration: none;
 }
@@ -168,7 +167,7 @@ export default {
 }
 
 .light .home-button:hover {
-  color: #FFFFFF;
+  color: #EFEFF5;
   border: 2px solid #6b48ff;
   background-color: #6b48ff;
   text-decoration: none;
@@ -224,11 +223,15 @@ export default {
   }
 
   .home-intro-row strong {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 
-  .second {
-    font-size: 1.1rem;
+  .typing {
+    font-size: 1.5rem;
+  }
+
+  .home-intro-row {
+    font-size: 1.3rem;
   }
 
   .home-button {

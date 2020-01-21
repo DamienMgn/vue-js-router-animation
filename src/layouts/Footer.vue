@@ -59,7 +59,7 @@ footer {
     width: 7px;
     height: 1px;
     margin-top: -10px;
-    background-color: #FFFFFF
+    background-color: #EFEFF5
 }
 
 .light .horizontal-line {
