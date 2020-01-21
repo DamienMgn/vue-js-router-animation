@@ -138,7 +138,7 @@ export default {
 }
 
 .contact-link {
-  margin: 0 0.1rem;
+  margin: 0.1rem 0.1rem;
   font-size: 1.1rem;
   color: #FFCC68;
   background: #22264A;
@@ -188,7 +188,7 @@ export default {
   }
 
   .contact-link {
-    margin: 0 0.5rem;
+    margin: 0.5rem 0.5rem;
   }
 }
 
@@ -202,7 +202,7 @@ export default {
   }
 
   .contact-link {
-    margin: 0 1rem;
+    margin: 0.5rem 1rem;
   }
 }
 
@@ -217,11 +217,15 @@ export default {
   }
 
   .contact-link {
-    margin: 0 2rem;
+    margin: 0.5rem 2rem;
   }
 
   .contact-title {
     font-size: 2.3rem
+  }
+
+  .logo-container {
+    margin: 1rem 4rem 3rem 4rem;
   }
 
 }
