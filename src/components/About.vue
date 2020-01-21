@@ -144,13 +144,13 @@ export default {
 .contact-link {
   margin: 0 0.1rem;
   font-size: 1.1rem;
-  color: #70759C;
+  color: #FFCC68;
   background: #22264A;
   padding: 0.2rem 0.5rem;
 }
 
 .contact-link:hover {
-  color: #70759C;
+  color: #FFCC68;
 }
 
 .presentation-logos-container {
