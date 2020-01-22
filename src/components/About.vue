@@ -120,7 +120,7 @@ export default {
   align-items: center;
   margin: 5rem 0rem 12rem 0rem;
   background: #F5F5F5;
-  border: 2px solid #70759C;
+  border: 2px solid #A0A5CF;
   padding: 2rem 1rem;
   border-radius: 2px;
 }

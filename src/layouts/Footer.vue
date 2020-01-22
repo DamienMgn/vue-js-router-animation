@@ -44,7 +44,7 @@ footer {
 }
 
 .dark .footer-link-container p {
-    color: #70759C
+    color: #A0A5CF
 }
 
 .dark .footer-link-container a {
