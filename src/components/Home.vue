@@ -152,8 +152,9 @@ export default {
 }
 
 .light .home-button {
-  color: #6b48ff;
+  color: #EFEFF5;
   border: 2px solid #6b48ff;
+  background-color: #6b48ff;
 }
 
 .home-button:hover {
@@ -167,10 +168,8 @@ export default {
 }
 
 .light .home-button:hover {
-  color: #EFEFF5;
-  border: 2px solid #6b48ff;
+  transform: scale(1.05);
   background-color: #6b48ff;
-  text-decoration: none;
 }
 
 .circle {

@@ -8,13 +8,13 @@
         Après avoir travaillé pendant 6 ans en tant que contrôleur de gestion / comptable, j’ai décidé en 2019 de me reconvertir dans le développement web.
         </p>
         <p class="presentation-p">
-        Passionné par le monde du développement depuis plusieurs années, j’ai commencé par me former en autodidacte pendant mes études (<strong>HTML, CSS, PHP</strong>). J’ai ensuite continué à me former au cours de ma vie professionnelle en développant des applications / jeux simples en <strong>Javascript</strong>.
+        Passionné par le monde du développement que j'ai pu découvrir pendant mes études, j’ai commencé par me former en autodidacte (<strong>HTML, CSS, PHP</strong>). J’ai ensuite continué à me former au cours de ma vie professionnelle en développant des applications / jeux simples en <strong>Javascript</strong>.
         </p>
         <p class="presentation-p">
-        Pour réussir ma reconversion, de mai à octobre 2019, j’ai suivi une formation intensive Développeur Web et Web Mobile en téléprésentielle avec l’école <a href="https://oclock.io/" target="_blank" rel="noopener noreferrer">O’clock</a>. Formation qui m'a permis de consolider mes connaissances et de me spécialiser sur le framework <strong>Symfony 4</strong>.
+        Pour réussir ma reconversion, de mai à octobre 2019, j’ai suivi une formation intensive Développeur Web et Web Mobile en téléprésentielle avec l’école <a href="http://wiwatt.fr/" target="_blank" rel="noopener noreferrer">O’clock</a>. Formation qui m'a permis de consolider mes connaissances et de me spécialiser sur le framework <strong>Symfony 4</strong>. Nous avons eu l'occasion de réaliser un projet de fin de formation entièrement en Symfony <a href="https://oclock.io/" target="_blank" rel="noopener noreferrer">Wiwatt.fr</a> et d'en faire la <a href="https://youtu.be/NRrQdTIMyYA?t=3989" target="_blank" rel="noopener noreferrer">présentation</a> sur Twitch.
         </p>
         <p class="presentation-p">
-        Je travaille aussi avec le framework Laravel et les frameworks font-end comme <strong>React Js</strong> et <strong>Vue Js</strong>.
+        J'apprécie également travailler avec le framework Laravel et les frameworks font-end comme <strong>React Js</strong> et <strong>Vue Js</strong>.
         </p>
         <div class="presentation-logos-container">
           <span class="logo-container"><img src="../assets/images/laravel.svg" alt="laravel"></span>
