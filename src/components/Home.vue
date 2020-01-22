@@ -4,7 +4,7 @@
     <KinesisElement 
       class="home-intro"
       :type="'depth'"
-      :strength="10">
+      :strength="6">
       <div class="home-presentation">
         <span class="home-intro-row"><strong class="title">Damien Maquignon</strong></span>
         <span class="home-intro-row second">Développeur Web Junior Spécialisé Symfony 4.</span>
@@ -44,18 +44,6 @@ export default {
     },
     data () {
       return {
-        circles: [
-          { top: '45%', left: '73%', width: '50vw', height: '1px', strength: 40, class: 'circle'},
-          { top: '18%', left: '10%', width: '50vw', height: '1px', strength: 46, class: 'circle'},
-          { top: '18%', left: '20%', width: '1px', height: '75vh', strength: 33, class: 'circle'},
-          { top: '70%', left: '3%', width: '50vw', height: '1px', strength: 33, class: 'circle'},
-          { top: '11%', left: '87%', width: '1px', height: '75vh', strength: 65, class: 'circle'},
-          { top: '21%', left: '60%', width: '50vw', height: '1px', strength: 40, class: 'circle'},
-          { top: '70%', left: '59%', width: '1px', height: '75vh', strength: 40, class: 'circle'},
-          { top: '7%', left: '7%', width: '1px', height: '75vh', strength: 60, class: 'circle'},
-          { top: '75%', left: '79%', width: '50vw', height: '1px', strength: 60, class: 'circle'},
-          { top: '89%', left: '66%', width: '50vw', height: '1px', strength: 60, class: 'circle'},
-        ]
       }
     }
 }
@@ -64,15 +52,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 
-.light .page {
-  background: #EFEFF5;
+.light .home {
+  background: #22264A;
   color: #22264A;
   transition: all 0.5s;
 }
 
-.dark .page{
-  background: #22264A;
-  color: #A0A5CF;
+.dark .home{
+  background: #F5F5F5;
+  color: #A1A6D0;
   transition: all 0.5s;
 }
 
@@ -94,6 +82,11 @@ export default {
   width: 100vw;
   height: 100vh;
   min-height: calc(100vh - 35px);  
+  background: #F5F5F5
+}
+
+.dark .home-intro {
+  background: #22264A
 }
 
 .toggle-container {
@@ -122,7 +115,7 @@ export default {
   font-size: 3rem;
   font-weight: normal;
   font-style: normal;
-  color: #100F4D;
+  color: #22264A;
 }
 
 .dark .home-intro-row strong {

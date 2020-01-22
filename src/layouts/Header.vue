@@ -77,12 +77,14 @@ header a {
     font-size: 0.85rem;
 }
 
-.dark header a:hover {
-    text-decoration: overline #FFCC68;
+.dark header a a:hover {
+    text-decoration: overline #FFCC68;    
+    color: #FFCC68 !important;
 }
 
-header a:hover {
+header a a:hover {
     text-decoration: overline #6b48ff;
+    color: #6b48ff !important;
 }
 
 .dark header .navbar {

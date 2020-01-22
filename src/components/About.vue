@@ -1,5 +1,5 @@
 <template>
-  <section class="page">
+  <section class="page about">
     <Header :mode="mode" @toggle="$emit('toggle')" />
     <div class="about-container">
       <div class="about-section about-presentation">
@@ -75,6 +75,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+
+.dark .about {
+  background: #22264A;
+  color: #A1A6D0;
+  transition: all 0.5s;
+}
+
+.light .about {
+  background: #F5F5F5;
+  color: #22264A;
+  transition: all 0.5s;
+}
+
 .about-container {
   width: 100%;
   height: 100%;
@@ -82,6 +95,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
+
 }
 
 .about-section {
@@ -119,8 +133,8 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 5rem 0rem 12rem 0rem;
-  background: #F5F5F5;
-  border: 2px solid #A0A5CF;
+  background: #EFEFF5;
+  box-shadow: -15px -15px 1px #292E5E;
   padding: 2rem 1rem;
   border-radius: 2px;
 }
@@ -145,7 +159,7 @@ export default {
   margin: 0.1rem 0.1rem;
   font-size: 1.1rem;
   color: #FFCC68;
-  background: #22264A;
+  background: #292E5E;
   padding: 0.2rem 0.5rem;
 }
 
@@ -164,14 +178,11 @@ export default {
 }
 
 .logo-container {
-  border: 1px solid #22264A;
+  background-color: #EFEFF5;
+  box-shadow: -10px -10px 1px #292E5E;
   padding: 1rem;
   margin: 1.5rem 1.5rem;
   transform: rotate(-45deg)
-}
-
-.dark .logo-container {
-  border-color: #EFEFF5;
 }
 
 .logo-container img {

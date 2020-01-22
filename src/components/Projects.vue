@@ -1,5 +1,5 @@
 <template>
-    <div class="page">
+    <div class="page project">
       <Header :mode="mode" @toggle="$emit('toggle')"/>
       <div class="projects-container">
         <agile class="projects" :dots="false">
@@ -69,6 +69,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+
+.dark .project {
+  background: #22264A;
+  color: #A1A6D0;
+  transition: all 0.5s;
+}
+
+.light .project {
+  background: #F5F5F5;
+  color: #22264A;
+  transition: all 0.5s;
+}
+
 .projects-container {
   height: 100vh;
   width: 100%;
