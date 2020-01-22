@@ -26,7 +26,7 @@
         Pour finir, quand je ne suis pas en train de coder, j'aime lire des romans (principalement de science fiction), cuisiner et faire de l'escalade !
         </p>
         <div class="contact-container">
-          <h3 class="contact-title">Me contacter !</h3>
+          <h3 class="contact-title">Pour me contacter ou jeter un oeil à mes projets :</h3>
           <div class="contact-icon-container">
             <a class="contact-link" href="https://github.com/DamienMgn" target="_blank" rel="noopener noreferrer">GITHUB</a>
             <a class="contact-link" href="https://codepen.io/damienmgn" target="_blank" rel="noopener noreferrer">CODEPEN</a>
@@ -127,6 +127,9 @@ export default {
 
 .contact-title {
   color: #22264A;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .contact-icon-container {
@@ -222,7 +225,7 @@ export default {
   }
 
   .contact-title {
-    font-size: 2.3rem
+    font-size: 1.7rem
   }
 
   .logo-container {
@@ -245,7 +248,7 @@ export default {
   }
 
   .contact-container {
-    height: 35vh;
+    min-height: 35vh;
 }
 }
 </style>
