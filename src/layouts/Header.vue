@@ -78,13 +78,14 @@ header a {
 }
 
 .dark header a a:hover {
-    text-decoration: overline #FFCC68;    
-    color: #FFCC68 !important;
+    text-shadow: 1px 0 0 #FFCC68, -1px 0 0 #FFCC68, 0 1px 0 #FFCC68, 0 -1px 0 #FFCC68, 1px 1px #FFCC68, -1px -1px 0 #FFCC68, 1px -1px 0 #FFCC68, -1px 1px 0 #FFCC68;
+    color: #22264A !important;
 }
 
 header a a:hover {
-    text-decoration: overline #6b48ff;
-    color: #6b48ff !important;
+    text-shadow: 1px 0 0 #6b48ff, -1px 0 0 #6b48ff, 0 1px 0 #6b48ff, 0 -1px 0 #6b48ff, 1px 1px #6b48ff, -1px -1px 0 #6b48ff, 1px -1px 0 #6b48ff, -1px 1px 0 #6b48ff;
+    text-decoration: none;
+    color: #EFEFF5 !important;
 }
 
 .dark header .navbar {
@@ -111,12 +112,16 @@ header .navbar-brand {
     text-decoration: none !important;
 }
 
-.dark .is-active {
-    text-decoration: overline #FFCC68;
+.is-active {
+    text-shadow: 1px 0 0 #6b48ff, -1px 0 0 #6b48ff, 0 1px 0 #6b48ff, 0 -1px 0 #6b48ff, 1px 1px #6b48ff, -1px -1px 0 #6b48ff, 1px -1px 0 #6b48ff, -1px 1px 0 #6b48ff;
+    text-decoration: none;
+    color: #EFEFF5 !important;
 }
 
-.is-active {
-    text-decoration: overline #6b48ff;
+.dark .is-active {
+    text-shadow: 1px 0 0 #FFCC68, -1px 0 0 #FFCC68, 0 1px 0 #FFCC68, 0 -1px 0 #FFCC68, 1px 1px #FFCC68, -1px -1px 0 #FFCC68, 1px -1px 0 #FFCC68, -1px 1px 0 #FFCC68;
+    text-decoration: none;
+    color: #22264A !important;
 }
 
 .navbar-toggler {
