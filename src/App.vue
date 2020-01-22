@@ -39,8 +39,6 @@ html {
   background-color: #424949;
 }
 
-
-
 body {
   margin: 0;
 }

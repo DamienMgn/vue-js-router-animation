@@ -116,11 +116,25 @@ export default {
   font-weight: normal;
   font-style: normal;
   color: #22264A;
+  text-shadow: 1px 0 0 #22264A, -1px 0 0 #22264A, 0 1px 0 #22264A, 0 -1px 0 #22264A, 1px 1px #22264A, -1px -1px 0 #22264A, 1px -1px 0 #22264A, -1px 1px 0 #22264A;
+  transition: color .5s;
+}
+
+.home-intro-row strong:hover {
+  color: #F5F5F5;
+  transition: color .5s;
+}
+
+
+.dark .home-intro-row strong:hover {
+  color: #F5F5F5;
+  transition: color .5s;
 }
 
 .dark .home-intro-row strong {
-  text-shadow: 1px 0 0 #FFCC68, -1px 0 0 #FFCC68, 0 1px 0 #FFCC68, 0 -1px 0 #FFCC68, 1px 1px #FFCC68, -1px -1px 0 #FFCC68, 1px -1px 0 #FFCC68, -1px 1px 0 #FFCC68;
+  text-shadow: 1px 0 0 #F5F5F5, -1px 0 0 #F5F5F5, 0 1px 0 #F5F5F5, 0 -1px 0 #F5F5F5, 1px 1px #F5F5F5, -1px -1px 0 #F5F5F5, 1px -1px 0 #F5F5F5, -1px 1px 0 #F5F5F5;
   color: #22264A;
+  transition: color .5s;
 }
 
 .typing {
