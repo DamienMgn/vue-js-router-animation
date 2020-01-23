@@ -1,11 +1,8 @@
 <template>
   <KinesisContainer class="page home">
     <Header :mode="mode" @toggle="$emit('toggle')" />
-    <KinesisElement 
-      class="home-intro"
-      :type="'depth'"
-      :strength="6">
-      <div class="home-presentation">
+    <div class="home-intro">
+      <KinesisElement class="home-presentation" :type="'depth'" :strength="10">
         <span class="home-intro-row"><strong class="title">Damien Maquignon</strong></span>
         <span class="home-intro-row second">Développeur Web Junior Spécialisé Symfony 4.</span>
         <vue-typed-js 
@@ -17,17 +14,9 @@
           :strings="['React Js !', 'Vue Js !', 'Laravel !', 'les pizzas !']">
           <span class="home-intro-row third">Mais j'aime aussi <span class="typing"></span></span>
         </vue-typed-js>
-      </div>
-      <router-link to="/about" class="home-button">En savoir plus !</router-link>
-      <KinesisElement 
-        v-for="(circle, index) in circles"
-        :class="circle.class"
-        v-bind:style="{ top: circle.top, left: circle.left, width: circle.width, height: circle.height }"
-        v-bind:key="index"
-        :type="'translate'"
-        :strength="circle.strength">
+        <router-link to="/about" class="home-button">En savoir plus !</router-link>
       </KinesisElement>
-    </KinesisElement>
+    </div>
   </KinesisContainer>
 </template>
 
@@ -53,13 +42,15 @@ export default {
 <style>
 
 .light .home {
-  background: #17202A;
+  background: url('../assets/images/waves.svg');
+  background-size: cover;
   color: #17202A;
   transition: all 0.5s;
 }
 
 .dark .home{
-  background: #F5F5F5;
+  background: url('../assets/images/waves_dark.svg');
+  background-size: cover;
   color: #ABB2B9;
   transition: all 0.5s;
 }
@@ -82,12 +73,6 @@ export default {
   width: 100vw;
   height: 100vh;
   min-height: calc(100vh - 35px);  
-  background-color: #F5F5F5;
-  transition: background-color 0.5s;
-}
-
-.dark .home-intro {
-  background-color: #17202A;
   transition: background-color 0.5s;
 }
 
@@ -141,7 +126,7 @@ export default {
 
 .typing {
   font-size: 1.2rem !important;
-  color: #6b48ff
+  color: #0035C7
 }
 
 .dark .typing {
@@ -151,25 +136,28 @@ export default {
 .home-button {
   font-size: 1.2rem;
   color: #1ABC9C;
-  border: 2px solid #1ABC9C;
+  border-radius: 50px;
   margin-top: 1rem;
   padding: 10px 35px;
   z-index: 14;
   background-color: transparent;
   transition: all 0.5s;
   font-style: italic;
+  border: 2px solid #0035C7;
+  color: #EFEFF5;
+  background-color: #0035C7;
 }
 
-.light .home-button {
+.dark .home-button {
+  border: 2px solid #1ABC9C;
   color: #EFEFF5;
-  border: 2px solid #6b48ff;
-  background-color: #6b48ff;
+  background-color: #1ABC9C;
 }
 
 .home-button:hover {
-  color: #EFEFF5;
-  background-color: #1ABC9C;
-  text-decoration: none;
+  border: 2px solid #1ABC9C;
+  background-color: #16202A;
+  color: #1ABC9C;
 }
 
 .home-button:active {
@@ -177,8 +165,9 @@ export default {
 }
 
 .light .home-button:hover {
-  transform: scale(1.05);
-  background-color: #6b48ff;
+  border: 2px solid #0035C7;
+  background-color: #F5F5F5;
+  color: #0035C7;
 }
 
 .circle {
@@ -186,7 +175,7 @@ export default {
   z-index: 0;
   border-radius: 50%;
   display: none;
-  background: linear-gradient(45deg, #1ABC9C, #6b48ff);
+  background: linear-gradient(45deg, #1ABC9C, #0035C7);
 }
 
 @media (min-width: 325px) {
@@ -210,13 +199,13 @@ export default {
 @media (min-width: 595px) {
 
   .home-intro-row strong {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
   }
 
   .home-button {
     font-size: 0.9rem;
     margin-top: 4rem;
-    padding: 10px 35px;
+    padding: 1rem 35px;
   }
 
   .page {
@@ -231,7 +220,7 @@ export default {
   }
 
   .home-intro-row strong {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .typing {
@@ -245,7 +234,7 @@ export default {
   .home-button {
     font-size: 1.1rem;
     margin: 3rem 0 4rem 0;
-    padding: 10px 35px;
+    padding: 1rem 3rem;
   }
 }
 

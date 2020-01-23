@@ -134,7 +134,7 @@ export default {
 }
 
 .light .presentation-p a {
-  color: #6b48ff;
+  color: #0035C7;
 }
 
 .dark .presentation-p a {
@@ -153,7 +153,7 @@ export default {
   margin: 5rem 0rem 5rem 0rem;
   padding: 2rem 1rem;
   border-radius: 15px;
-  border: 2px solid #6b48ff;
+  border: 2px solid #0035C7;
 }
 
 .dark .contact-container {
@@ -184,7 +184,7 @@ export default {
   margin: 0.1rem 0.1rem;
   font-size: 1.1rem;
   color: #EFEFF5;
-  background: #6b48ff;
+  background: #0035C7;
   padding: 0.2rem 0.5rem;
   border-radius: 5px;
 }

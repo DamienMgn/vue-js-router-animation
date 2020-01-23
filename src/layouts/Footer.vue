@@ -52,7 +52,7 @@ footer {
 }
 
 .light .footer-link-container a {
-    color: #6b48ff
+    color: #0035C7
 }
 
 .horizontal-line {

@@ -133,7 +133,7 @@ export default {
   min-height: 16rem;
   background: linear-gradient(-45deg, rgba(22, 32, 42, 1), rgba(22, 32, 42, 0.5));
   color: #EFEFF5;
-  border-bottom: 5px solid #6B48FF;
+  border-bottom: 5px solid #0035C7;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

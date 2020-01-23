@@ -96,7 +96,7 @@ header a {
 
 header a:hover {
     text-decoration: none;
-    color: #6b48ff !important;
+    color: #0035C7 !important;
 }
 
 .dark header .navbar {
@@ -129,7 +129,7 @@ header .navbar-brand {
 
 .is-active {
     text-decoration: none;
-    color: #6b48ff !important;
+    color: #0035C7 !important;
 }
 
 .dark .is-active {
