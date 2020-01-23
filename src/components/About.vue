@@ -199,8 +199,7 @@ export default {
 }
 
 .logo-container {
-  background-color: #EFEFF5;
-  border: 5px solid #292E5E;
+  border: 2px solid #292E5E;
   padding: 1rem;
   margin: 1.5rem 1.5rem;
   transform: rotate(-45deg)
