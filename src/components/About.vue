@@ -3,6 +3,7 @@
     <Header :mode="mode" @toggle="$emit('toggle')" />
     <div class="about-container">
       <div class="about-section about-presentation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"> <path class="elementor-shape-fill" d="M0,0c0,0,0,6,0,6.7c0,18,240.2,93.6,615.2,92.6C989.8,98.5,1000,25,1000,6.7c0-0.7,0-6.7,0-6.7H0z"></path> </svg>
         <h2 class="about-title">Je m’appelle Damien et je suis développeur web junior.</h2>
         <p class="presentation-p">
         Après avoir travaillé pendant 6 ans en tant que contrôleur de gestion / comptable, j’ai décidé en 2019 de me reconvertir dans le développement web.
@@ -53,22 +54,6 @@ export default {
   props: ["mode"],
   components: {
     Header
-  },
-  data () {
-    return {
-        circles: [
-          { top: '45%', left: '83%', width: '50px', height: '1px', strength: 40, class: 'circle'},
-          { top: '18%', left: '10%', width: '90px', height: '1px', strength: 46, class: 'circle'},
-          { top: '18%', left: '20%', width: '1px', height: '105px', strength: 33, class: 'circle'},
-          { top: '11%', left: '87%', width: '1px', height: '110px', strength: 65, class: 'circle'},
-          { top: '75%', left: '7%', width: '1px', height: '94px', strength: 60, class: 'circle'},
-          { top: '75%', left: '79%', width: '89px', height: '1px', strength: 60, class: 'circle'},
-          { top: '89%', left: '66%', width: '100px', height: '1px', strength: 60, class: 'circle'},
-          { top: '33%', left: '81%', width: '1px', height: '100px', strength: 60, class: 'circle'},
-          { top: '69%', left: '89%', width: '1px', height: '100px', strength: 60, class: 'circle'},
-          { top: '35%', left: '21%', width: '1px', height: '100px', strength: 60, class: 'circle'},
-        ]
-    }
   }
 }
 </script>
@@ -95,16 +80,51 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background: #EFEFF5;
+}
 
+.dark .about-container {
+  background-color: #292E5E;
 }
 
 .about-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 2px;
+  position: relative;
   height: 100%;
   width: 80%;
-  margin: 1rem 2rem 1rem 2rem;
+  padding: 1rem 1.5rem;
+  margin: 1rem 2rem 7rem 2rem;
+  background-color: #F5F5F5;
+  z-index: 1;
+  transition: background-color 0.5s;
+}
+
+.dark .about-section {
+  background-color: #22264A;
+  transition: background-color 0.5s;
+}
+
+.about-section svg {
+  width: 100vw;
+  transform: rotate(180deg);
+  position: absolute;
+  top: -6rem;
+  left: -15vw;
+  min-height: 6rem;
+  z-index: 0;
+  fill: #EFEFF5;
+}
+
+.dark .about-section svg {
+  fill: #292E5E;
+  transition: fill 0.5s;
+}
+
+.about-title {
+   z-index: 1;
 }
 
 .presentation-p {
@@ -132,11 +152,11 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5rem 0rem 12rem 0rem;
-  background: #EFEFF5;
-  box-shadow: -15px -15px 1px #292E5E;
+  margin: 5rem 0rem 5rem 0rem;
+  background-color: #EFEFF5;
   padding: 2rem 1rem;
   border-radius: 2px;
+  border: 5px solid #292E5E;
 }
 
 .contact-title {
@@ -174,12 +194,13 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 3rem 0rem 4rem 0rem
+  margin: 3rem 0rem 4rem 0rem;
+  padding: 1rem 0rem;
 }
 
 .logo-container {
   background-color: #EFEFF5;
-  box-shadow: -10px -10px 1px #292E5E;
+  border: 5px solid #292E5E;
   padding: 1rem;
   margin: 1.5rem 1.5rem;
   transform: rotate(-45deg)
@@ -195,11 +216,11 @@ export default {
 @media (min-width: 540px) {
   .about-section {
     width: 70%;
-    padding: 0px 1rem;
+    padding: 1rem 1.5rem;
   }
 
   .about-container {
-    margin-top: 5rem;
+    margin-top: 10rem;
   }
 
   .contact-link {
@@ -209,11 +230,8 @@ export default {
 
 @media (min-width: 690px) {
   .about-section {
-    width: 60%;
-  }
-
-  .about-container {
-    margin-top: 6rem;
+    width: 70%;
+    padding: 2rem 3rem;
   }
 
   .contact-link {
@@ -222,9 +240,13 @@ export default {
 }
 
 @media (min-width: 840px) {
+
+  .about-section {
+    padding: 2rem 3rem;
+  }
+
   .about-container {
     flex-direction: row;
-    margin-top: 7rem;
   }
 
   .presentation-p {
@@ -247,7 +269,8 @@ export default {
 
 @media (min-width: 990px) {
   .about-section {
-    width: 50%;
+    width: 60%;
+    padding: 3rem 5rem;
   }
 
   .about-container {
@@ -256,6 +279,7 @@ export default {
 
   .about-title {
     margin-bottom: 2rem;
+    margin-top: 5rem;
   }
 
   .contact-container {

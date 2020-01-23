@@ -94,7 +94,7 @@ header a a:hover {
 }
 
 header .navbar {
-    background-color: #EFEFF5 !important;
+    background-color: #f5F5F5 !important;
     border-bottom: 1px solid #22264A;
 }
 
