@@ -132,7 +132,7 @@ export default {
   height: 100%;
   text-align: justify;
   line-height: 2.5rem;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
 }
 
 .light .presentation-p a {
@@ -144,7 +144,7 @@ export default {
 }
 
 .presentation-p strong{
-  font-weight: 300 !important;
+  font-weight: 500 !important;
 }
 
 .contact-container {
