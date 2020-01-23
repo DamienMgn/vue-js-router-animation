@@ -78,8 +78,8 @@ header a {
 }
 
 .dark header a a:hover {
-    text-shadow: 1px 0 0 #FFCC68, -1px 0 0 #FFCC68, 0 1px 0 #FFCC68, 0 -1px 0 #FFCC68, 1px 1px #FFCC68, -1px -1px 0 #FFCC68, 1px -1px 0 #FFCC68, -1px 1px 0 #FFCC68;
-    color: #22264A !important;
+    text-shadow: 1px 0 0 #1ABC9C, -1px 0 0 #1ABC9C, 0 1px 0 #1ABC9C, 0 -1px 0 #1ABC9C, 1px 1px #1ABC9C, -1px -1px 0 #1ABC9C, 1px -1px 0 #1ABC9C, -1px 1px 0 #1ABC9C;
+    color: #17202A !important;
 }
 
 header a a:hover {
@@ -89,13 +89,13 @@ header a a:hover {
 }
 
 .dark header .navbar {
-    background-color: #22264A !important;
+    background-color: #17202A !important;
     border-bottom: 1px solid #EFEFF5;
 }
 
 header .navbar {
-    background-color: #f5F5F5 !important;
-    border-bottom: 1px solid #22264A;
+    background-color: #F5F5F5 !important;
+    border-bottom: 1px solid #17202A;
 }
 
 .navbar-nav {
@@ -103,7 +103,7 @@ header .navbar {
 }
 
 header .navbar-brand {
-    color: #22264A !important;
+    color: #17202A !important;
     text-decoration: none !important;
 }
 
@@ -119,13 +119,13 @@ header .navbar-brand {
 }
 
 .dark .is-active {
-    text-shadow: 1px 0 0 #FFCC68, -1px 0 0 #FFCC68, 0 1px 0 #FFCC68, 0 -1px 0 #FFCC68, 1px 1px #FFCC68, -1px -1px 0 #FFCC68, 1px -1px 0 #FFCC68, -1px 1px 0 #FFCC68;
+    text-shadow: 1px 0 0 #1ABC9C, -1px 0 0 #1ABC9C, 0 1px 0 #1ABC9C, 0 -1px 0 #1ABC9C, 1px 1px #1ABC9C, -1px -1px 0 #1ABC9C, 1px -1px 0 #1ABC9C, -1px 1px 0 #1ABC9C;
     text-decoration: none;
-    color: #22264A !important;
+    color: #17202A !important;
 }
 
 .navbar-toggler {
-    border: 1px solid #22264A !important;
+    border: 1px solid #17202A !important;
 }
 
 .dark .navbar-toggler {
@@ -135,7 +135,7 @@ header .navbar-brand {
 .menu-item {
     height: 3px;
     width: 30px;
-    background-color: #22264A;
+    background-color: #17202A;
     margin-top: 6px;
     margin-bottom: 6px
 }

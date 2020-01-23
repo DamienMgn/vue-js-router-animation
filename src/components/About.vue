@@ -62,14 +62,14 @@ export default {
 <style>
 
 .dark .about {
-  background: #22264A;
-  color: #A1A6D0;
+  background: #17202A;
+  color: #ABB2B9;
   transition: all 0.5s;
 }
 
 .light .about {
   background: #F5F5F5;
-  color: #22264A;
+  color: #17202A;
   transition: all 0.5s;
 }
 
@@ -84,7 +84,7 @@ export default {
 }
 
 .dark .about-container {
-  background-color: #292E5E;
+  background-color: #273746;
 }
 
 .about-section {
@@ -103,7 +103,7 @@ export default {
 }
 
 .dark .about-section {
-  background-color: #22264A;
+  background-color: #17202A;
   transition: background-color 0.5s;
 }
 
@@ -119,7 +119,7 @@ export default {
 }
 
 .dark .about-section svg {
-  fill: #292E5E;
+  fill: #273746;
   transition: fill 0.5s;
 }
 
@@ -140,7 +140,7 @@ export default {
 }
 
 .dark .presentation-p a {
-  color: #FFCC68;
+  color: #1ABC9C;
 }
 
 .presentation-p strong{
@@ -156,11 +156,11 @@ export default {
   background-color: #EFEFF5;
   padding: 2rem 1rem;
   border-radius: 2px;
-  border: 5px solid #292E5E;
+  border: 5px solid #273746;
 }
 
 .contact-title {
-  color: #22264A;
+  color: #17202A;
   width: 100%;
   text-align: center;
   font-size: 1.2rem;
@@ -178,13 +178,13 @@ export default {
 .contact-link {
   margin: 0.1rem 0.1rem;
   font-size: 1.1rem;
-  color: #FFCC68;
-  background: #292E5E;
+  color: #EFEFF5;
+  background: #273746;
   padding: 0.2rem 0.5rem;
 }
 
 .contact-link:hover {
-  color: #FFCC68;
+  color: #EFEFF5;
 }
 
 .presentation-logos-container {
@@ -199,7 +199,7 @@ export default {
 }
 
 .logo-container {
-  border: 2px solid #292E5E;
+  border: 2px solid #273746;
   padding: 1rem;
   margin: 1.5rem 1.5rem;
   transform: rotate(-45deg)

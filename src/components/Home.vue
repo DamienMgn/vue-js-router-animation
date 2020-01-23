@@ -53,14 +53,14 @@ export default {
 <style>
 
 .light .home {
-  background: #22264A;
-  color: #22264A;
+  background: #17202A;
+  color: #17202A;
   transition: all 0.5s;
 }
 
 .dark .home{
   background: #F5F5F5;
-  color: #A1A6D0;
+  color: #ABB2B9;
   transition: all 0.5s;
 }
 
@@ -86,7 +86,7 @@ export default {
 }
 
 .dark .home-intro {
-  background: #22264A
+  background: #17202A
 }
 
 .toggle-container {
@@ -115,8 +115,8 @@ export default {
   font-size: 3rem;
   font-weight: normal;
   font-style: normal;
-  color: #22264A;
-  text-shadow: 1px 0 0 #22264A, -1px 0 0 #22264A, 0 1px 0 #22264A, 0 -1px 0 #22264A, 1px 1px #22264A, -1px -1px 0 #22264A, 1px -1px 0 #22264A, -1px 1px 0 #22264A;
+  color: #17202A;
+  text-shadow: 1px 0 0 #17202A, -1px 0 0 #17202A, 0 1px 0 #17202A, 0 -1px 0 #17202A, 1px 1px #17202A, -1px -1px 0 #17202A, 1px -1px 0 #17202A, -1px 1px 0 #17202A;
   transition: color .5s;
 }
 
@@ -133,7 +133,7 @@ export default {
 
 .dark .home-intro-row strong {
   text-shadow: 1px 0 0 #F5F5F5, -1px 0 0 #F5F5F5, 0 1px 0 #F5F5F5, 0 -1px 0 #F5F5F5, 1px 1px #F5F5F5, -1px -1px 0 #F5F5F5, 1px -1px 0 #F5F5F5, -1px 1px 0 #F5F5F5;
-  color: #22264A;
+  color: #17202A;
   transition: color .5s;
 }
 
@@ -143,13 +143,13 @@ export default {
 }
 
 .dark .typing {
-  color: #FFCC68
+  color: #1ABC9C
 }
 
 .home-button {
   font-size: 1.2rem;
-  color: #FFCC68;
-  border: 2px solid #FFCC68;
+  color: #1ABC9C;
+  border: 2px solid #1ABC9C;
   margin-top: 1rem;
   padding: 10px 35px;
   z-index: 14;
@@ -166,7 +166,7 @@ export default {
 
 .home-button:hover {
   color: #EFEFF5;
-  background-color: #FFCC68;
+  background-color: #1ABC9C;
   text-decoration: none;
 }
 
@@ -184,7 +184,7 @@ export default {
   z-index: 0;
   border-radius: 50%;
   display: none;
-  background: linear-gradient(45deg, #FFCC68, #6b48ff);
+  background: linear-gradient(45deg, #1ABC9C, #6b48ff);
 }
 
 @media (min-width: 325px) {

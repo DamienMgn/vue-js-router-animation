@@ -41,7 +41,7 @@ export default {
           key: 2,
           title: 'Organize your Book',
           content: 'Application développé avec React/Redux pour le Front-End et Laravel pour le Back-End. Cette application permet de classer ses livres en 3 catégories : Livre à lire, livre lu et livre à acheter. Api : Google Books',
-          color: '#FFCC68',
+          color: '#1ABC9C',
           class: 'second-project',
           link: 'https://react-redux-app-books.netlify.com/'
         },
@@ -57,7 +57,7 @@ export default {
           key: 4,
           title: 'Mes autres projets',
           content: 'Pour avoir un aperçu de mes autres projets n\'hésithez pas à visiter mon Github !',
-          color: '#FFCC68',
+          color: '#1ABC9C',
           class: 'fourth-project',
           link: 'https://github.com/DamienMgn'
         },
@@ -71,14 +71,14 @@ export default {
 <style>
 
 .dark .project {
-  background: #22264A;
+  background: #17202A;
   color: #A1A6D0;
   transition: all 0.5s;
 }
 
 .light .project {
   background: #F5F5F5;
-  color: #22264A;
+  color: #17202A;
   transition: all 0.5s;
 }
 
@@ -111,7 +111,7 @@ export default {
   align-items: center;
   border-radius: 2px;
   opacity: 1;
-  color: #22264A;
+  color: #17202A;
   font-size: 0.9rem;
 }
 
@@ -197,7 +197,7 @@ export default {
 }
 
 .agile__nav-button:hover {
-  color: #22264A;
+  color: #17202A;
   background-color: #EFEFF5;
 }
 
