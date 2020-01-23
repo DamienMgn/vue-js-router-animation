@@ -15,7 +15,7 @@
         Pour réussir ma reconversion, de mai à octobre 2019, j’ai suivi une formation intensive Développeur Web et Web Mobile en téléprésentielle avec l’école <a href="http://wiwatt.fr/" target="_blank" rel="noopener noreferrer">O’clock</a>. Formation qui m'a permis de consolider mes connaissances et de me spécialiser sur le framework <strong>Symfony 4</strong>. Nous avons eu l'occasion de réaliser un projet de fin de formation entièrement en Symfony <a href="https://oclock.io/" target="_blank" rel="noopener noreferrer">Wiwatt.fr</a> et d'en faire la <a href="https://youtu.be/NRrQdTIMyYA?t=3989" target="_blank" rel="noopener noreferrer">présentation</a> sur Twitch.
         </p>
         <p class="presentation-p">
-        J'apprécie également travailler avec le framework Laravel et les frameworks font-end comme <strong>React Js</strong> et <strong>Vue Js</strong>.
+        J'apprécie également travailler avec le framework Laravel et les frameworks front-end comme <strong>React Js</strong> et <strong>Vue Js</strong>.
         </p>
         <div class="presentation-logos-container">
           <span class="logo-container"><img src="../assets/images/laravel.svg" alt="laravel"></span>
@@ -64,13 +64,11 @@ export default {
 .dark .about {
   background: #17202A;
   color: #ABB2B9;
-  transition: all 0.5s;
 }
 
 .light .about {
   background: #F5F5F5;
   color: #17202A;
-  transition: all 0.5s;
 }
 
 .about-container {
@@ -81,6 +79,7 @@ export default {
   flex-direction: row;
   justify-content: center;
   background: #EFEFF5;
+  transition: all 0.5s;
 }
 
 .dark .about-container {
@@ -99,12 +98,11 @@ export default {
   margin: 1rem 2rem 7rem 2rem;
   background-color: #F5F5F5;
   z-index: 1;
-  transition: background-color 0.5s;
+  transition: all 0.5s;
 }
 
 .dark .about-section {
   background-color: #17202A;
-  transition: background-color 0.5s;
 }
 
 .about-section svg {
@@ -116,11 +114,11 @@ export default {
   min-height: 6rem;
   z-index: 0;
   fill: #EFEFF5;
+  transition: fill 0.5s;
 }
 
 .dark .about-section svg {
   fill: #273746;
-  transition: fill 0.5s;
 }
 
 .about-title {
@@ -153,10 +151,13 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 5rem 0rem 5rem 0rem;
-  background-color: #EFEFF5;
   padding: 2rem 1rem;
-  border-radius: 2px;
-  border: 5px solid #273746;
+  border-radius: 15px;
+  border: 2px solid #6b48ff;
+}
+
+.dark .contact-container {
+  border: 2px solid #1ABC9C;
 }
 
 .contact-title {
@@ -164,6 +165,10 @@ export default {
   width: 100%;
   text-align: center;
   font-size: 1.2rem;
+}
+
+.dark .contact-title {
+  color: #ABB2B9;
 }
 
 .contact-icon-container {
@@ -179,8 +184,14 @@ export default {
   margin: 0.1rem 0.1rem;
   font-size: 1.1rem;
   color: #EFEFF5;
-  background: #273746;
+  background: #6b48ff;
   padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+
+.dark .contact-link {
+  background: #1ABC9C;
+  color: #EFEFF5;
 }
 
 .contact-link:hover {
@@ -199,10 +210,11 @@ export default {
 }
 
 .logo-container {
-  border: 2px solid #273746;
+  border: 1px solid ; 
   padding: 1rem;
   margin: 1.5rem 1.5rem;
-  transform: rotate(-45deg)
+  transform: rotate(-45deg);
+  border-radius: 15px;
 }
 
 .logo-container img {

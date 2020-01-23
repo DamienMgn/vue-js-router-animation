@@ -18,7 +18,7 @@
           <span class="home-intro-row third">Mais j'aime aussi <span class="typing"></span></span>
         </vue-typed-js>
       </div>
-      <router-link to="/about" class="home-button">Me contacter !</router-link>
+      <router-link to="/about" class="home-button">En savoir plus !</router-link>
       <KinesisElement 
         v-for="(circle, index) in circles"
         :class="circle.class"
@@ -82,11 +82,13 @@ export default {
   width: 100vw;
   height: 100vh;
   min-height: calc(100vh - 35px);  
-  background: #F5F5F5
+  background-color: #F5F5F5;
+  transition: background-color 0.5s;
 }
 
 .dark .home-intro {
-  background: #17202A
+  background-color: #17202A;
+  transition: background-color 0.5s;
 }
 
 .toggle-container {

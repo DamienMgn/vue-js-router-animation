@@ -12,10 +12,22 @@
 
             <!-- Right aligned nav items -->
             <b-navbar-nav>
-                <b-nav-item href="#" ><router-link to="/">HOME</router-link></b-nav-item>
-                <b-nav-item href="#" ><router-link to="/about">A PROPOS</router-link></b-nav-item>
-                <b-nav-item href="#" ><router-link to="/projects">REALISATIONS</router-link></b-nav-item>
+                <router-link to="/">HOME</router-link>
+                <router-link to="/about">A PROPOS</router-link>
+                <router-link to="/projects">REALISATIONS</router-link>
                 <Toggle v-if="window.width < 992" :mode="mode" @toggle="$emit('toggle')"/>
+            </b-navbar-nav>
+            <b-navbar-nav v-if="mode === 'dark'" class="header-icons-container">
+                <b-nav-item href="https://codepen.io/damienmgn" target="_blank" rel="noopener noreferrer" ><img src="../assets/images/codepen_dark.svg" alt=""></b-nav-item>
+                <b-nav-item href="https://github.com/DamienMgn" target="_blank" rel="noopener noreferrer" ><img src="../assets/images/github_dark.svg" alt=""></b-nav-item>
+                <b-nav-item href="https://fr.linkedin.com/in/damien-maquignon" target="_blank" rel="noopener noreferrer" ><img src="../assets/images/linkedin_dark.svg" alt=""></b-nav-item>
+                <b-nav-item href="mailto:maquignondm@gmail.com" target="_blank" rel="noopener noreferrer" ><img src="../assets/images/envelope_dark.svg" alt=""></b-nav-item>
+            </b-navbar-nav>
+            <b-navbar-nav v-if="mode === 'light'" class="header-icons-container">
+                <b-nav-item href="https://codepen.io/damienmgn" target="_blank" rel="noopener noreferrer" ><img src="../assets/images/codepen_light.svg" alt=""></b-nav-item>
+                <b-nav-item href="https://github.com/DamienMgn" target="_blank" rel="noopener noreferrer" ><img src="../assets/images/github_light.svg" alt=""></b-nav-item>
+                <b-nav-item href="https://fr.linkedin.com/in/damien-maquignon" target="_blank" rel="noopener noreferrer" ><img src="../assets/images/linkedin_light.svg" alt=""></b-nav-item>
+                <b-nav-item href="mailto:maquignondm@gmail.com" target="_blank" rel="noopener noreferrer" ><img src="../assets/images/envelope_light.svg" alt=""></b-nav-item>
             </b-navbar-nav>
             </b-collapse>
             <Toggle v-if="window.width >= 992" :mode="mode" @toggle="$emit('toggle')"/>
@@ -65,6 +77,7 @@ header {
     z-index: 14;
     padding: 10px;
     top: 0px;
+    margin-top: 1rem;
 }
 
 .dark header a {
@@ -77,15 +90,13 @@ header a {
     font-size: 0.85rem;
 }
 
-.dark header a a:hover {
-    text-shadow: 1px 0 0 #1ABC9C, -1px 0 0 #1ABC9C, 0 1px 0 #1ABC9C, 0 -1px 0 #1ABC9C, 1px 1px #1ABC9C, -1px -1px 0 #1ABC9C, 1px -1px 0 #1ABC9C, -1px 1px 0 #1ABC9C;
-    color: #17202A !important;
+.dark header a:hover {
+    color: #1ABC9C !important;
 }
 
-header a a:hover {
-    text-shadow: 1px 0 0 #6b48ff, -1px 0 0 #6b48ff, 0 1px 0 #6b48ff, 0 -1px 0 #6b48ff, 1px 1px #6b48ff, -1px -1px 0 #6b48ff, 1px -1px 0 #6b48ff, -1px 1px 0 #6b48ff;
+header a:hover {
     text-decoration: none;
-    color: #EFEFF5 !important;
+    color: #6b48ff !important;
 }
 
 .dark header .navbar {
@@ -96,6 +107,10 @@ header a a:hover {
 header .navbar {
     background-color: #F5F5F5 !important;
     border-bottom: 1px solid #17202A;
+}
+
+.header-icons-container {
+    margin-right: 3rem;
 }
 
 .navbar-nav {
@@ -113,15 +128,13 @@ header .navbar-brand {
 }
 
 .is-active {
-    text-shadow: 1px 0 0 #6b48ff, -1px 0 0 #6b48ff, 0 1px 0 #6b48ff, 0 -1px 0 #6b48ff, 1px 1px #6b48ff, -1px -1px 0 #6b48ff, 1px -1px 0 #6b48ff, -1px 1px 0 #6b48ff;
     text-decoration: none;
-    color: #EFEFF5 !important;
+    color: #6b48ff !important;
 }
 
 .dark .is-active {
-    text-shadow: 1px 0 0 #1ABC9C, -1px 0 0 #1ABC9C, 0 1px 0 #1ABC9C, 0 -1px 0 #1ABC9C, 1px 1px #1ABC9C, -1px -1px 0 #1ABC9C, 1px -1px 0 #1ABC9C, -1px 1px 0 #1ABC9C;
     text-decoration: none;
-    color: #17202A !important;
+    color: #1ABC9C !important;
 }
 
 .navbar-toggler {

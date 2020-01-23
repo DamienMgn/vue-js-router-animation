@@ -1,64 +1,67 @@
 <template>
     <div class="page project">
-      <Header :mode="mode" @toggle="$emit('toggle')"/>
-      <div class="projects-container">
-        <agile class="projects" :dots="false">
-          <template slot="prevButton">prec.</template>
-            <div v-for="slide in slides" :key="slide.key" class="slide" :class="slide.class">
+      <Header :mode="mode" @toggle="$emit('toggle')" />
+      <div class="about-container">
+        <div class="about-section projects-container">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"> <path class="elementor-shape-fill" d="M0,0c0,0,0,6,0,6.7c0,18,240.2,93.6,615.2,92.6C989.8,98.5,1000,25,1000,6.7c0-0.7,0-6.7,0-6.7H0z"></path> </svg>
+            <div v-for="slide in slides" :key="slide.key" class="slide">
+              <div class="slide-img" :class="slide.class">
+              </div>
               <div class="slide-content" :style="{borderColor: slide.color}">
-                <h3 class="slide-title" :style="{borderColor: slide.color}">{{slide.title}}</h3>
+                <h3 class="slide-title" >{{slide.title}}</h3>
+                <div class="tools-container">
+                  <span v-for="tool in slide.tools" :key="tool" class="tool">{{tool}}</span>
+                </div>
                 <p>{{slide.content}}</p>
                 <a target="_blank" rel="noopener noreferrer" :href="slide.link" class="slide-link">GO</a>
               </div>
             </div>
-          <template slot="nextButton">suiv.</template>
-        </agile>
+          </div>
       </div>
     </div>
 </template>
 
 <script>
-import { VueAgile } from 'vue-agile';
-import Header from '../layouts/Header.vue'
+import Header from '../layouts/Header.vue';
+
 export default {
-	components: {
-		agile: VueAgile,
+  props: ["mode"],
+  components: {
     Header
-	},
-  props: "mode",
+  },
   data () {
     return {
       slides: [
         {
           key: 1,
           title: 'Wiwatt.fr',
-          content: 'Projet de fin de formation réalisé en équipe de 4 personnes, wiwatt.fr est un site de location de véhicule électrique entre particulier développé entièrement avec le framework Symfony 4.',
-          color: '#6b48ff',
+          content: 'Projet de fin de formation réalisé en équipe de 4 personnes, wiwatt.fr est un site de location de véhicule électrique entre particulier.',
           class: 'first-project',
+          tools: ['Symfony 4'],
           link: 'http://wiwatt.fr/'
         },
         {
           key: 2,
           title: 'Organize your Book',
-          content: 'Application développé avec React/Redux pour le Front-End et Laravel pour le Back-End. Cette application permet de classer ses livres en 3 catégories : Livre à lire, livre lu et livre à acheter. Api : Google Books',
-          color: '#1ABC9C',
+          content: 'Application permettant de classer ses livres en 3 catégories : Livre à lire, livre lu et livre à acheter.',
           class: 'second-project',
+          tools: ['Laravel', 'React Js', 'Redux'],
           link: 'https://react-redux-app-books.netlify.com/'
         },
         {
           key: 3,
           title: 'Mon portfolio',
           content: 'Le site sur lequel vous naviguez a été créé entièrement avec le framework VueJS.',
-          color: '#6b48ff',
           class: 'third-project',
+          tools: ['Vue Js'],
           link: 'https://www.damienmaquignon.com/'
         },
         {
           key: 4,
           title: 'Mes autres projets',
           content: 'Pour avoir un aperçu de mes autres projets n\'hésithez pas à visiter mon Github !',
-          color: '#1ABC9C',
           class: 'fourth-project',
+          tools: ['Symfony 4', 'Laravel', 'React Js', 'Redux', 'Vue Js'],
           link: 'https://github.com/DamienMgn'
         },
       ],
@@ -72,7 +75,7 @@ export default {
 
 .dark .project {
   background: #17202A;
-  color: #A1A6D0;
+  color: #ABB2BA;
   transition: all 0.5s;
 }
 
@@ -83,90 +86,91 @@ export default {
 }
 
 .projects-container {
-  height: 100vh;
-  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/images/pic01.jpg');
-  background-size: cover;
-  border-radius: 2px;
 }
 
-.projects {
-  position: relative;
+.slides-container {
+  margin: 5rem 0rem;
+  width: 60vw;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 75vw;
-  margin-top: 15px;
 }
 
 .slide {
-  height: 60vh;
-  width: 75vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 2px;
-  opacity: 1;
-  color: #17202A;
-  font-size: 0.9rem;
+  margin: 4rem 0;
+}
+
+.slide-img {
+  width: 100%;
+  height: 15rem;
+  border-radius: 15px 15px 0px 0px 
 }
 
 .first-project {
-  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/images/wiwatt2-ConvertImage.png');
+  background:  url('../assets/images/wiwatt2-ConvertImage.png');
   background-size: cover;
 }
 
 .second-project {
-  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/images/book.png');
+  background: url('../assets/images/book.png');
   background-size: cover;
 }
 
 .third-project {
-  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/images/portfolio.png');
+  background: url('../assets/images/portfolio.png');
   background-size: cover;
 }
 
 .fourth-project {
-  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1)), url('../assets/images/code.jpeg');
+  background: url('../assets/images/code.jpeg');
   background-size: cover;
 }
 
 .slide-content {
+  min-height: 16rem;
+  background: linear-gradient(-45deg, rgba(22, 32, 42, 1), rgba(22, 32, 42, 0.5));
+  color: #EFEFF5;
+  border-bottom: 5px solid #6B48FF;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 100%;
-  width: 100%;
-  padding: 20px;
-  text-align: justify;
-  border: 3px solid;
-  border-radius: 2px;
-  background: linear-gradient(-45deg, rgba(1, 24, 50, 1), rgba(255, 255, 255, 0.1));
-  color: #EFEFF5
+  padding: 1rem;
+  font-weight: 300;
+}
+
+.dark .slide-content {
+  background: linear-gradient(-45deg, rgba(39, 55, 70, 1), rgba(255, 255, 255, 0.1));
+  border-bottom: 5px solid #1AB899;
+  color: #ABB2BA
+}
+
+.slide-content p {
+  text-align: center;
+  margin: 0;
 }
 
 .slide-title {
-  color: #EFEFF5;
-  padding: 5px 5px;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  border-radius: 10px 100px / 120px;
-  border: 3px solid;
+  margin: 0;
+}
+
+.tool {
+  font-style: italic;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  text-decoration: underline;
 }
 
 .slide-link {
   color: #EFEFF5;
-  border: 2px solid #EFEFF5;
-  padding: 5px 50px;
+  border: 1px solid #EFEFF5;
+  padding: 0.5rem 3rem;
   background-color: transparent;
   transition: all 0.4s;
   border-radius: 2px;
-  margin-top: 2rem;
 }
 
 .slide-link:hover {
@@ -180,66 +184,19 @@ export default {
   transform: scale(0.95)
 }
 
-.agile__actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.agile__nav-button {
-  padding: 5px 25px;
-  margin: 15px 15px;
-  border-radius: 2px;
-  border: 2px solid #EFEFF5;
-  color: #EFEFF5;
-  background-color: transparent;
-  transition: background-color 0.5s; 
-}
-
-.agile__nav-button:hover {
-  color: #17202A;
-  background-color: #EFEFF5;
-}
-
 @media (min-width: 540px) {
-  .projects-container {
-    height: 80vh;
-    width: 90%;
-  }
 
   .slide {
-    font-size: 1.2rem;
-  }
-
-  .slide-title {
-    padding: 5px 100px;
+    margin: 4rem;
   }
 
 }
 @media (min-width: 992px) {
-  .projects {
-    width: 50vw;
-  }
   
   .slide {
-    height: 50vh;
-    width: 50vw;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin: 4rem 0rem !important;
   }
 
-  .agile__nav-button {
-    position: absolute;
-    margin: 0;
-  }
-
-  .agile__nav-button--prev {
-    top: 50%;
-    left: -183px;
-  }
-
-  .agile__nav-button--next {
-    top: 50%;
-    left: calc(100% + 101px);
-  }
 }
 </style>
