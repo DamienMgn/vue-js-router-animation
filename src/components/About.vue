@@ -28,9 +28,9 @@
         </p>
         <div class="contact-container">
           <h3 class="contact-title">Pour me contacter ou jeter un oeil à mes projets :</h3>
-          <div class="contact-icon-container">
+          <div class="contact-link-container">
             <a class="contact-link" href="https://github.com/DamienMgn" target="_blank" rel="noopener noreferrer">GITHUB</a>
-            <a class="contact-link" href="https://codepen.io/damienmgn" target="_blank" rel="noopener noreferrer">CODEPEN</a>
+            <a class="contact-link" href="https://codepen.io/damienmgn/pens/public" target="_blank" rel="noopener noreferrer">CODEPEN</a>
             <a class="contact-link" href="https://fr.linkedin.com/in/damien-maquignon" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
             <a class="contact-link" href="mailto:maquignondm@gmail.com" target="_blank" rel="noopener noreferrer">MAIL</a>
           </div>
@@ -61,10 +61,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 
-.dark .about {
-  background: #17202A;
-  color: #ABB2B9;
-}
+
+/* ******LIGHT******* */
+
+/* ******About******* */
 
 .light .about {
   background: #F5F5F5;
@@ -82,10 +82,6 @@ export default {
   transition: all 0.5s;
 }
 
-.dark .about-container {
-  background-color: #273746;
-}
-
 .about-section {
   display: flex;
   flex-direction: column;
@@ -101,10 +97,6 @@ export default {
   transition: all 0.5s;
 }
 
-.dark .about-section {
-  background-color: #17202A;
-}
-
 .about-section svg {
   width: 100vw;
   transform: rotate(180deg);
@@ -117,12 +109,10 @@ export default {
   transition: fill 0.5s;
 }
 
-.dark .about-section svg {
-  fill: #273746;
-}
-
 .about-title {
    z-index: 1;
+   color: #0035C7;
+   transition: color 0.5s;
 }
 
 .presentation-p {
@@ -133,17 +123,44 @@ export default {
   font-weight: 400 !important;
 }
 
-.light .presentation-p a {
+.presentation-p a {
   color: #0035C7;
-}
-
-.dark .presentation-p a {
-  color: #1ABC9C;
 }
 
 .presentation-p strong{
   font-weight: 500 !important;
 }
+
+.presentation-logos-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0rem 4rem 0rem;
+  padding: 1rem 0rem;
+  border-top: 1px solid #0035C7;
+  border-bottom: 1px solid #0035C7;
+}
+
+
+.logo-container {
+  border: 1px solid ; 
+  padding: 1rem;
+  margin: 1.5rem 1.5rem;
+  transform: rotate(-45deg);
+  border-radius: 15px;
+}
+
+.logo-container img {
+  width: 75px;
+  height: 75px;
+  transform: rotate(45deg);
+  margin: 0;
+}
+
+/* ******Contact******* */
 
 .contact-container {
   display: flex;
@@ -156,10 +173,6 @@ export default {
   border: 2px solid #0035C7;
 }
 
-.dark .contact-container {
-  border: 2px solid #1ABC9C;
-}
-
 .contact-title {
   color: #17202A;
   width: 100%;
@@ -167,11 +180,7 @@ export default {
   font-size: 1.2rem;
 }
 
-.dark .contact-title {
-  color: #ABB2B9;
-}
-
-.contact-icon-container {
+.contact-link-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -189,40 +198,58 @@ export default {
   border-radius: 5px;
 }
 
-.dark .contact-link {
-  background: #1ABC9C;
-  color: #EFEFF5;
-}
-
 .contact-link:hover {
   color: #EFEFF5;
 }
 
-.presentation-logos-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 3rem 0rem 4rem 0rem;
-  padding: 1rem 0rem;
+/* ******DARK******* */
+
+/* ******About******* */
+
+.dark .about {
+  background: #17202A;
+  color: #ABB2B9;
 }
 
-.logo-container {
-  border: 1px solid ; 
-  padding: 1rem;
-  margin: 1.5rem 1.5rem;
-  transform: rotate(-45deg);
-  border-radius: 15px;
+.dark .about-container {
+  background-color: #273746;
 }
 
-.logo-container img {
-  width: 75px;
-  height: 75px;
-  transform: rotate(45deg)
+.dark .about-section {
+  background-color: #17202A;
 }
 
+.dark .about-section svg {
+  fill: #273746;
+}
+
+.dark .about-title {
+   z-index: 1;
+   color: #1ABC9C;
+}
+
+.dark .presentation-p a {
+  color: #1ABC9C;
+}
+
+.dark .presentation-logos-container {
+  border-color: #1ABC9C;
+}
+
+/* ******Contact******* */
+
+.dark .contact-container {
+  border: 2px solid #1ABC9C;
+}
+
+.dark .contact-title {
+  color: #ABB2B9;
+}
+
+.dark .contact-link {
+  background: #1ABC9C;
+  color: #EFEFF5;
+}
 
 @media (min-width: 540px) {
   .about-section {
@@ -252,10 +279,6 @@ export default {
 
 @media (min-width: 840px) {
 
-  .about-section {
-    padding: 2rem 3rem;
-  }
-
   .about-container {
     flex-direction: row;
   }
@@ -273,7 +296,7 @@ export default {
   }
 
   .logo-container {
-    margin: 1rem 4rem 3rem 4rem;
+    margin: 2rem 4rem 2rem 4rem;
   }
 
 }
@@ -295,6 +318,6 @@ export default {
 
   .contact-container {
     min-height: 35vh;
-}
+  }
 }
 </style>

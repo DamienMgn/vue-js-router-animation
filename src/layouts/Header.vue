@@ -17,17 +17,11 @@
                 <router-link to="/projects">REALISATIONS</router-link>
                 <Toggle v-if="window.width < 992" :mode="mode" @toggle="$emit('toggle')"/>
             </b-navbar-nav>
-            <b-navbar-nav v-if="mode === 'dark'" class="header-icons-container">
-                <b-nav-item href="https://codepen.io/damienmgn" target="_blank" rel="noopener noreferrer" ><img src="../assets/images/codepen_dark.svg" alt=""></b-nav-item>
-                <b-nav-item href="https://github.com/DamienMgn" target="_blank" rel="noopener noreferrer" ><img src="../assets/images/github_dark.svg" alt=""></b-nav-item>
-                <b-nav-item href="https://fr.linkedin.com/in/damien-maquignon" target="_blank" rel="noopener noreferrer" ><img src="../assets/images/linkedin_dark.svg" alt=""></b-nav-item>
-                <b-nav-item href="mailto:maquignondm@gmail.com" target="_blank" rel="noopener noreferrer" ><img src="../assets/images/envelope_dark.svg" alt=""></b-nav-item>
-            </b-navbar-nav>
-            <b-navbar-nav v-if="mode === 'light'" class="header-icons-container">
-                <b-nav-item href="https://codepen.io/damienmgn" target="_blank" rel="noopener noreferrer" ><img src="../assets/images/codepen_light.svg" alt=""></b-nav-item>
-                <b-nav-item href="https://github.com/DamienMgn" target="_blank" rel="noopener noreferrer" ><img src="../assets/images/github_light.svg" alt=""></b-nav-item>
-                <b-nav-item href="https://fr.linkedin.com/in/damien-maquignon" target="_blank" rel="noopener noreferrer" ><img src="../assets/images/linkedin_light.svg" alt=""></b-nav-item>
-                <b-nav-item href="mailto:maquignondm@gmail.com" target="_blank" rel="noopener noreferrer" ><img src="../assets/images/envelope_light.svg" alt=""></b-nav-item>
+            <b-navbar-nav class="header-icons-container">
+                <b-nav-item href="https://codepen.io/damienmgn/pens/public" target="_blank" rel="noopener noreferrer" ><img :src="require('../assets/images/codepen_' + mode + '.svg')" alt="codepen"></b-nav-item>
+                <b-nav-item href="https://github.com/DamienMgn" target="_blank" rel="noopener noreferrer" ><img :src="require('../assets/images/github_' + mode + '.svg')" alt="github"></b-nav-item>
+                <b-nav-item href="https://fr.linkedin.com/in/damien-maquignon" target="_blank" rel="noopener noreferrer" ><img :src="require('../assets/images/linkedin_' + mode + '.svg')" alt="linkedin"></b-nav-item>
+                <b-nav-item href="mailto:maquignondm@gmail.com" target="_blank" rel="noopener noreferrer" ><img :src="require('../assets/images/envelope_' + mode + '.svg')" alt="mail"></b-nav-item>
             </b-navbar-nav>
             </b-collapse>
             <Toggle v-if="window.width >= 992" :mode="mode" @toggle="$emit('toggle')"/>
