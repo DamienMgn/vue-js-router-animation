@@ -24,7 +24,7 @@
           <span class="logo-container"><img src="../assets/images/logo.png" alt="vue js"></span>
         </div>
         <p class="presentation-p">
-        Pour finir, quand je ne suis pas en train de coder, je lis (principalement de la science fiction) et j'aime cuisiner et faire de l'escalade !
+        Pour finir, quand je ne code pas, je lis (principalement de la science fiction), j'aime cuisiner et faire de l'escalade !
         </p>
         <div class="contact-container">
           <h3 class="contact-title">Pour me contacter ou jeter un oeil à mes projets :</h3>
