@@ -77,7 +77,6 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background: #F5F5F5;
   transition: all 0.5s;
 }
 
@@ -91,7 +90,6 @@ export default {
   width: 80%;
   padding: 1rem 1.5rem;
   margin: 1rem 2rem 7rem 2rem;
-  background-color: #F5F5F5;
   z-index: 1;
   transition: all 0.5s;
 }
@@ -196,14 +194,6 @@ export default {
 .dark .about {
   background: #17202A;
   color: #ABB2B9;
-}
-
-.dark .about-container {
-  background-color: #17202A;
-}
-
-.dark .about-section {
-  background-color: #17202A;
 }
 
 .dark .about-section svg {
