@@ -1,15 +1,12 @@
 <template>
     <header>
         <b-navbar toggleable="lg" type="dark" variant="info" >
-
             <b-navbar-toggle target="nav-collapse">
                 <div class="menu-item"></div>
                 <div class="menu-item"></div>
                 <div class="menu-item"></div>
             </b-navbar-toggle>
-
             <b-collapse id="nav-collapse" is-nav>
-
             <!-- Right aligned nav items -->
             <b-navbar-nav>
                 <router-link to="/">HOME</router-link>

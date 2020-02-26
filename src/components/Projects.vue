@@ -3,7 +3,6 @@
       <Header :mode="mode" @toggle="$emit('toggle')" />
       <div class="about-container">
         <div class="about-section projects-container">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"> <path class="elementor-shape-fill" d="M0,0c0,0,0,6,0,6.7c0,18,240.2,93.6,615.2,92.6C989.8,98.5,1000,25,1000,6.7c0-0.7,0-6.7,0-6.7H0z"></path> </svg>
             <div v-for="slide in slides" :key="slide.key" class="slide">
               <div class="slide-img" :class="slide.class">
               </div>
@@ -195,7 +194,7 @@ export default {
   
   .slide {
     font-size: 1.1rem;
-    margin: 4rem 0rem !important;
+    margin: 2rem 0rem !important;
   }
 
 }

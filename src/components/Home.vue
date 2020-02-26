@@ -42,14 +42,14 @@ export default {
 <style>
 
 .light .home {
-  background: url('../assets/images/waves.svg');
+  background: #F5F5F5;
   background-size: cover;
   color: #17202A;
   transition: all 0.5s;
 }
 
 .dark .home{
-  background: url('../assets/images/waves_dark.svg');
+  background: #17202A;
   background-size: cover;
   color: #ABB2B9;
   transition: all 0.5s;
@@ -92,10 +92,12 @@ export default {
 }
 
 .home-intro-row {
-  font-size: 1.1rem;
+  font-size: 1rem;
   z-index: 4;
   text-align: center;
   font-style: italic;
+  color: gray;
+  font-weight: 300;
 }
 
 .home-intro-row strong {
@@ -114,13 +116,14 @@ export default {
 
 
 .dark .home-intro-row strong:hover {
-  color: #F5F5F5;
+  color: #17202A;
+  text-shadow: 1px 0 0 #F5F5F5, -1px 0 0 #F5F5F5, 0 1px 0 #F5F5F5, 0 -1px 0 #F5F5F5, 1px 1px #F5F5F5, -1px -1px 0 #F5F5F5, 1px -1px 0 #F5F5F5, -1px 1px 0 #F5F5F5;
   transition: color .5s;
 }
 
 .dark .home-intro-row strong {
-  text-shadow: 1px 0 0 #F5F5F5, -1px 0 0 #F5F5F5, 0 1px 0 #F5F5F5, 0 -1px 0 #F5F5F5, 1px 1px #F5F5F5, -1px -1px 0 #F5F5F5, 1px -1px 0 #F5F5F5, -1px 1px 0 #F5F5F5;
-  color: #17202A;
+  
+  color: #F5F5F5;
   transition: color .5s;
 }
 
@@ -224,11 +227,11 @@ export default {
   }
 
   .typing {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .home-intro-row {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .home-button {

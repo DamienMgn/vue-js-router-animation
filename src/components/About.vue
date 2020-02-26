@@ -3,7 +3,6 @@
     <Header :mode="mode" @toggle="$emit('toggle')" />
     <div class="about-container">
       <div class="about-section about-presentation">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"> <path class="elementor-shape-fill" d="M0,0c0,0,0,6,0,6.7c0,18,240.2,93.6,615.2,92.6C989.8,98.5,1000,25,1000,6.7c0-0.7,0-6.7,0-6.7H0z"></path> </svg>
         <h2 class="about-title">Je m’appelle Damien et je suis développeur web junior.</h2>
         <p class="presentation-p">
         Après avoir travaillé pendant 6 ans en tant que contrôleur de gestion / comptable, j’ai décidé en 2019 de me reconvertir dans le développement web.
@@ -78,7 +77,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background: #EFEFF5;
+  background: #F5F5F5;
   transition: all 0.5s;
 }
 
@@ -95,18 +94,6 @@ export default {
   background-color: #F5F5F5;
   z-index: 1;
   transition: all 0.5s;
-}
-
-.about-section svg {
-  width: 100vw;
-  transform: rotate(180deg);
-  position: absolute;
-  top: -6rem;
-  left: -15vw;
-  min-height: 6rem;
-  z-index: 0;
-  fill: #EFEFF5;
-  transition: fill 0.5s;
 }
 
 .about-title {
@@ -212,7 +199,7 @@ export default {
 }
 
 .dark .about-container {
-  background-color: #273746;
+  background-color: #17202A;
 }
 
 .dark .about-section {
@@ -308,12 +295,11 @@ export default {
   }
 
   .about-container {
-    margin-top: 10rem;
+    margin-top: 6rem;
   }
 
   .about-title {
     margin-bottom: 2rem;
-    margin-top: 5rem;
   }
 
   .contact-container {
